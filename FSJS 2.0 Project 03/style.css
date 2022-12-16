@@ -1,0 +1,171 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+/* navigation bar starts here */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 150px;
+}
+.list .list-item {
+  margin: 0 10%;
+  font-weight: 600;
+  padding: 5px;
+}
+.list {
+  position: relative;
+}
+.list:first-child::before {
+  content: "";
+  position: absolute;
+  width: 13%;
+  height: 0.158rem;
+  background-color: #000;
+  bottom: 1px;
+  left: -35%;
+}
+
+.button-group {
+  display: flex;
+}
+.nav-button {
+  font-family: "Poppins", sans-serif;
+  padding: 5px 28px;
+  background: none;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #5c5c5c;
+  margin-right: 150px;
+}
+.search-icon {
+  display: flex;
+  width: 20px;
+  height: 10px;
+  margin: 0px 8px;
+}
+
+/* navigatiom bar ends here  */
+/* hero left section starts here */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.square {
+  position: absolute;
+  z-index: -5;
+  top: 45%;
+  left: 8%;
+}
+.square img {
+  width: 20vw;
+}
+.star {
+  position: absolute;
+  right: 12%;
+  top: 5%;
+  z-index: -4;
+}
+.star img {
+  width: 45px;
+}
+.star2 {
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+  z-index: -6;
+}
+.star2 img {
+  width: 40px;
+}
+.globe {
+  position: absolute;
+  left: 46%;
+  top: -2%;
+  z-index: -3;
+}
+.globe img {
+  width: 50px;
+}
+.person-hero-imgage {
+  width: 30vw;
+}
+.person-hero-imgage img {
+  width: 23vw;
+  height: 65vh;
+  margin: 5%;
+}
+/* hero right section starts here */
+
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 65vw;
+  right: 5%;
+  top: 15%;
+}
+.hero-heading {
+  font-size: 65px;
+  margin-bottom: 5%;
+}
+.hero-description {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 39vw;
+  font-size: 13px;
+  margin-bottom: 5%;
+  color: #5c5c5c;
+}
+.button-email,
+.button-join {
+  padding: 8px 24px;
+  background: none;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #5c5c5c;
+  margin: 5px;
+  margin-bottom: 9%;
+}
+.button-email {
+  font-size: 18px;
+  border: 2px solid #5c5c5c;
+}
+.button-join {
+  padding: 8px 10px;
+  border: none;
+  background-color: #000;
+  color: #ececec;
+  font-size: 18px;
+}
+.contact-heading {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #5c5c5c;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+
+.icons span {
+  margin: 5px;
+}

@@ -1,0 +1,96 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  font-family: Montserrat;
+  background: url("assets/bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  color: #f2f4f6;
+  position: sticky;
+  top: 1px;
+}
+.line::before {
+  content: "";
+  color: #f2f4f6;
+  border: 1px solid #f2f4f6;
+  background-color: #f2f4f6;
+  padding: 10px 0;
+}
+.grow-list .list {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  list-style-type: none;
+  /* border: 1px solid snow; */
+  padding: 10px;
+  /* position: absolute; */
+  margin-right: 22rem;
+  position: relative;
+}
+.grow-list .list li {
+  margin: 0 2rem;
+}
+.grow-list .list li:first-child::after {
+   content:"\2304";
+   /* padding:5px 10px; */
+   /* border: 1px solid #fff; */
+   font-size: 20px;
+   font-weight: 600;
+   /* margin:0px 0px 100px 20px; */
+   position: absolute;
+   bottom:12px;
+   left:100px;
+   
+}
+.button-small {
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ba0cc5;
+  color: #f2f4f6;
+}
+.hero {
+  display: flex;
+  width: 97vw;
+  height: 90vh;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  color: #f2f4f6;
+}
+.hero-heading {
+  /* border: 2px solid red; */
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 70px;
+  width: 49vw;
+}
+.hero-description {
+  /* border: 2px solid red; */
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 200px;
+}
+.button-large {
+  padding: 20px 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ba0cc5;
+  color: #f2f4f6;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
