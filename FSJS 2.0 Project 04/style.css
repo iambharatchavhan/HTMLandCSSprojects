@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Search */
+    background: #F9F5ED;
+    font-family:Montserrat, sans-serif;
+}
+nav{
+    padding: 20px 10%;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 5%;
+    /* gap: 50px; */
+    font-weight: 500;
+}
+
+
+/* CSS for HERO Section */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.leftmain{
+    width: 40%;
+}
+
+.leftmain h1{
+    font-size: 50px;
+}
+
+.leftmain p{
+    margin: 5% 0;
+}
+
+.leftmain button{
+    padding: 15px 20px;
+    border: none;
+    background-color: #3b855b;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.rightmain{
+    width: 60%;
+  
+    
+
+}
+.rightmain .uper-imges img{
+    width: 15vw;
+   margin:0.5rem;
+
+}
+ #lower-img img{
+   
+    width:33vw;
+    
+}
+  

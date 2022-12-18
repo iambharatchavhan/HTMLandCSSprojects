@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+}
+
+body{
+    max-width: 1440px;
+    background-color: #F0F4F5;
+    margin: auto; /* Auto */
+    overflow: hidden;
+}
+
+nav{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 600;
+}
+nav ul li:first-child{
+    color: #41d399;
+}
+
+/* Hero Section */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+main section {
+    width: 50%;
+}
+
+.leftsection{
+    margin-left: 5%;
+    position: relative;
+}
+
+.topangle{
+    width: 25px;
+}
+
+.leftsection h1{
+    font-size: 70px;
+}
+
+.leftsection p {
+    color: #808080;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.bottomangle{
+    width: 25px;
+    position: absolute;
+    right: 25px;
+}
+
+.stethoscope{
+    position: absolute;
+    width: 90%;
+    top: -60px;
+    right: -25px;
+    z-index: -1;
+}
+
+.mouse{
+    position: absolute;
+    right: -30px;
+    bottom :0;
+    width: 30px;
+}
+
+.leftsection button{
+    color: white;
+    background-color:#41d399;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 25px;
+    font-weight:600;
+}
+
+/*  Right Side */
+.greenbox,  .yellowbox{
+    position: absolute;
+    right: 0;
+}
+.greenbox{
+    width: 35%;
+    bottom: 30px;
+}
+.yellowbox{
+    width: 30%;
+    bottom: 50px;
+}
+
+
+.doctor{
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+    width:28%;
+    height: 90%;
+}
