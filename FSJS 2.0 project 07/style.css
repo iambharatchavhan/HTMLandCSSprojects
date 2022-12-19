@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;1,100;1,200;1,300&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: #080808;
+}
+
+/* navigation bar start here  */
+.flex-container {
+  width: 100vw;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+#nav-links {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  list-style-type: none;
+}
+#nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  margin: 0 0.5rem;
+}
+
+#nav-links li a:hover {
+  color: #f637ec;
+}
+.selectbutton {
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 15px;
+}
+.selectbutton:hover {
+  color: #f637ec;
+}
+.btn {
+  padding: 0 1rem;
+  margin: 0 0.5rem;
+  font-size: 15px;
+  border: none;
+  background: none;
+  color: #fff;
+  background-image: url('./Assets/Icons/btn-pink-bg.svg');
+  background-repeat: no-repeat;
+}
+/* Navigation bar ends here */
+/* hero section start here  */
+.hero-section {
+  width: 100vw;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 6rem;
+  position: relative;
+}
+.left-section {
+  padding: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.main-heading {
+  font-size: 90px;
+  font-weight: 400;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+.main-heading > span {
+  font-weight: 700;
+  color: #f637ec;
+}
+.discription {
+  color: #758283;
+  width: 35%;
+  margin-bottom: 2rem;
+}
+
+/* latter but upte with arrow  */
+
+.navbutton-second {
+  background-size: contain;
+  padding: 0rem 1rem;
+  font-size: 25px;
+}
+
+/* latter but upte with arrow  */
+.flex-users {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.numuser1 {
+  margin-right: -3rem;
+}
+.user {
+  display: flex;
+  font-size: 20px;
+}
+.para2 {
+  width: 50%;
+  margin: 5px 10px;
+}
+.num {
+  font-size: 50px;
+}
+.plus {
+  font-size: 40px;
+  color: #f637ec;
+}
+.backimg {
+  position: absolute;
+  width: 50%;
+  top: -2rem;
+  right: 5%;
+}
+.frontimg {
+  position: absolute;
+  width: 50%;
+  top: 2rem;
+  right: -12%;
+}
+/* banner desine with multiple imgs */
+
+.banner {
+  width: 100vw;
+  height: 25vh;
+  background-color: #1e2021;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ban {
+  margin-right: 4rem;
+}
+.banner img {
+  margin: 2rem;
+}
+/* banner desine with multiple imgs  end*/
+/* transsaction add secction start here */
+.transactions {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem;
+  margin-left: 2rem;
+  padding: 2rem;
+}
+.firastChild {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: #fff;
+  margin-left: 10rem;
+}
+.firastChild h1 {
+  width: 70%;
+  font-size: 50px;
+  font-weight: 400;
+}
+.firastChild .pinkText {
+  font-weight: 700;
+  color: #f637ec;
+  margin-right: 8rem;
+}
+.firastChild p {
+  width: 55%;
+  font-size: 19px;
+  color: #bcbcbc;
+}
+.secondChild {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-right: 5rem;
+}
+.box {
+  background-color: #1e2021;
+  text-align: center;
+  height: 45vh;
+  width: 20vw;
+  margin: 2rem;
+  color: #fff;
+  box-shadow: 1px 1px rgb(73, 73, 73), -0.1em 0 0.4em rgb(226, 226, 226);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.box img {
+  width: 50%;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+.box p {
+}
+
+.box:hover {
+  background-color: #5a5a5a;
+  transform: translate(0rem, -5ex);
+  transition: transform 280ms ease-out 50ms;
+}
+.cardChoice {
+  width: 100vw;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin: 10rem 0;
+}
+.textfiled {
+  margin-top: 3rem;
+}
+.textfiled h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.h1pinkText {
+  color: #f637ec;
+  font-weight: 700;
+}
+.textfiled p {
+  margin-top: 3rem;
+  color: #758283;
+}
+.imgforcard img {
+  width: 70%;
+}
+.review {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #f0f8ff;
+  margin-top: -5rem;
+  position: relative;
+}
+.textfiledreview h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.textfiledreview p {
+  margin-top: 3rem;
+  color: #758283;
+  margin-bottom: 5rem;
+}
+.ratingCard {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.starsbox {
+  background-color: #051016;
+  width: 28%;
+  text-align: left;
+  padding: 1.5rem;
+  margin: 2rem;
+  box-shadow: 1px 1px rgb(73, 73, 73), -0.1em 0 0.4em rgb(226, 226, 226);
+}
+.starsbox:hover {
+  background-color: #5a5a5a;
+  transform: scale(1.05);
+  transition: transform 280ms ease-out 50ms;
+}
+.starsbox img {
+  width: 40%;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.starsbox .reviewtext {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.address {
+  font-size: 12px;
+  margin-top: 0.3rem;
+}
+.nextbar {
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+  font-size: 6rem;
+  color: #5a5a5a;
+}
+.nextbtn {
+  background-color: #f637ec;
+  color: #f637ec;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  
+}
+.nextbtn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 50px 1px #ff1493;
+  transition: transform 280ms ease-out 50ms;
+
+}
+/* .nextbar::before{
+    content:"";
+    border:8px solid #f637ec;
+    background-color: #f637ec;
+    border-radius:10px;
+    padding:0px 30px;
+    position: absolute;
+    bottom: 5rem;
+    left: 8em;
+  
+} */
+/* fotter desing seem to be tough yahhh is to challenging 
+ */
+
+ .footer{
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  
+
+ }
+ .textarea2{
+  width: 100vw;
+  position: absolute;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+ }
+ .footer h1{
+  font-size: 60px;
+  font-weight:400;
+  margin-bottom:3rem;
+ }
+ .footer .blacktext{
+    color: #051016;
+    font-weight: 700;
+ }
+ .footer .imges{
+  width: 100vw;
+ 
+ }
+ .img1{
+   width: 100%;
+ }
+.img2{
+  position: absolute;
+  width:100% ;
+  top: 0;
+  left:0 ;
+}
+.img3{
+  position: absolute;
+  bottom: 18rem;
+  right:0 ;
+ 
+}
+.img4{
+  position: absolute;
+  top: 0;
+  left:0 ;
+}
+
+.fotternav{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  margin:7rem;
+  color: #051016;
+}
+.brandis a{
+  text-decoration: none;
+  list-style-type: none;
+  margin:0 1rem ;
+  color: #bcbcbc;
+}
