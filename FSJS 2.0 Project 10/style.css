@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;1,100;1,200;1,300&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,400;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #d5d5d5;
+}
+ /* --------------------------------------------------- */
+ /* golbla buttons */
+  .btn-global{
+    background-color: #6663e9;
+    padding: 1rem 2.3rem;
+    border-radius: 2rem;
+    border:none;
+    color: #ffffff;
+    font-weight: 600;
+
+  }
+  /* ------------------------------------------------------  */
+#header{
+   background-image: url("./Photos/mainBackground.png");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   width: 100vw;
+   height: 100vh;
+   padding: 2rem;
+   position: relative;
+
+  
+}
+.main-navigationbar{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d5d5d5;
+}
+.logo img{
+    width: 80%;
+    margin-left: 1.5rem;
+}
+.nav-text ul{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.nav-text ul li{
+    list-style-type: none;
+    margin:0 0.2rem;
+}
+
+.nav-text ul li a{
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 1rem 2rem;
+}
+.nav-text ul li a:hover{
+    background-color: #3936eb;
+    border-radius: 2rem;
+    border:none;
+    color: #ffffff;
+    font-weight: 600;
+    transform: scale(1.1);
+    transition: transform 280ms ease-out 50ms;
+}
+
+.btn-global:hover{
+    background-color: #3936eb;
+    transform: scale(1.1);
+    transition: transform 280ms ease-out 50ms;
+}
+/* ---------------------hero heading-------------------------- */
+.hero-heading{
+    color: #f2f2f2;
+    margin-left: 1.5rem;
+}
+.hero-heading h1{
+   font-size: 60px;
+   margin-top: 7rem;
+   margin-bottom: 1rem;
+}
+.hero-heading p{
+    font-size: 13px;
+    margin-bottom: 1.5rem;
+}
+.banner{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    padding:3rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -5rem;
+    left: 5rem;
+}
+/* ------------------------------main add----------------------------------- */
+.models{
+
+    background-color: #d5d5d5;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.model-heading{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+.Estate-section{
+    display: flex;
+    justify-content:center;
+    justify-items: center;
+    align-items: center;
+
+}
+.Estate-section2{
+    flex-direction: row-reverse;
+}
+.Estate-section img{
+    width:297px;
+    height:350px;
+    border-radius:1rem;
+    object-fit: cover;
+    margin: 0.5rem;
+    z-index: -5;
+}
+.price-card{
+    background-color: #fff;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:1rem 0;
+    border-radius: 0.5rem;
+    width: 80%;
+    position: relative;
+    bottom: 4rem;
+    left:2rem;
+}
+
+
+.price-card h2{
+    font-size:18px;
+    color: #313131;
+}
+.price-card .price{
+    font-size: 16px;
+    color: #6663e9;
+    font-weight: 600;
+}
+.imgsale2{
+    margin-top:4rem;
+}
+.imgsale3{
+    margin-top:8rem;
+}
+.btn-card{
+    padding: 0.8rem 1.5rem;
+}
