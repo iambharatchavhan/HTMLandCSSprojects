@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;1,100;1,200;1,300&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,400;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* gloabal style for button all buttons */
+/* ________________________________________________ */
+.btn-common {
+  border: none;
+  background: none;
+  color: #f8f8f8;
+  padding: 0.7rem 2rem;
+}
+
+/* ________________________________________________ */
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./Assets/Photos/futuristic-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+/* _____________mian head body_________________________ */
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 1.2rem;
+  /* position: sticky;
+  top: 0; */
+}
+.logo-navlist {
+  display: flex;
+  justify-content: space-between;
+}
+.link-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-left: 5rem;
+}
+.link-list li {
+  padding: 0.6rem 1.5rem;
+}
+.link-list li:hover {
+  background: #f4694c;
+  transition: 0.7s;
+}
+.link-list li a {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+.link-list li a:hover {
+  color: #f8f8f8;
+  transition: 0.7s;
+}
+/* _____________mian head body_________________________ */
+/* _____________mian head buttons_________________________ */
+.btn-signup {
+  background: #f4694c;
+}
+.btn-signin:hover {
+  background: #f4694c;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+/* _____________mian head buttons_________________________ */
+
+/* ---------------header hero--------------------- */
+.header-hero-section {
+}
+.text-heading {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+.text-heading {
+  width: 70%;
+  margin-left: 10rem;
+}
+.heading-left h1 {
+  font-size: 45px;
+}
+.heading-left p {
+  font-size: 14px;
+  margin: 2rem 0;
+  color: #c2bebe;
+}
+.btn-left {
+  padding: 1rem 2rem;
+  border: 2px solid #c2bebe;
+  margin-right: 1rem;
+}
+.btn-right {
+  padding: 1rem 2rem;
+  border: 2px solid #c2bebe;
+}
+.btn-left:hover {
+  border: none;
+  background: #f4694c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.btn-right:hover {
+  border: none;
+  background: #f4694c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.heading-right {
+  position: relative;
+}
+.heading-right p {
+  text-align: left;
+  font-size: 20px;
+}
+.img1 {
+  position: absolute;
+  left: -4rem;
+  top: 0.8rem;
+}
+.img2 {
+  position: absolute;
+  right: -5rem;
+  bottom: 0.5rem;
+}
+.btn-play {
+  background: rgb(78, 78, 78);
+  background: rgba(0, 0, 0, 0.8);
+
+  filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -webkit-filter: blur(1px);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 18em;
+  right: 5em;
+  cursor: pointer;
+}
+/* _______________________________________________ */
+.maingmae {
+  text-align: center;
+  margin-top: 2rem;
+}
+.maingmae h1 {
+  font-size: 35px;
+  margin: 4rem 0;
+}
+.all-boxes {
+  display: flex;
+  justify-content: center;
+}
+
+.fistbox {
+  background-image: url('./Assets/Photos/image\ 2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 210% 110%;
+  background-position: -16rem 0;
+  width: 19%;
+  height: 50vh;
+  position: relative;
+  margin: 0 1rem;
+}
+.fistbox:hover{
+  transform: scale(1.1);
+  transition: transform 280ms ease-out 50ms;
+}
+.game-details {
+  width: 100%;
+  background-color: rgba(35 , 33,33,0.6);
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  align-items: center;
+  color: #f8f8f8;
+  padding: 0.7rem;
+  position: absolute;
+  bottom: 0;
+}
+.game-details h3 {
+  font-size: 15px;
+}
+.game-details p {
+  font-size: 12px;
+  color: #f5f0f0;
+}
+
+.btn-download {
+  background-color: #f4694c;
+  padding: 0.5rem 1rem;
+  margin-left: 1.3rem;
+}
+.btn-download:hover{
+  background-color:#651201 ;
+  transform: scale(1.02);
+  transition: transform 280ms ease-out 50ms;
+}
+
+.secondbox {
+  background-image: url('./Assets/Photos/image\ 4.png');
+  background-position: -10rem 0;
+}
+.thirdbox {
+  background-image: url('./Assets/Photos/image\ 3.png');
+  background-position: -10rem 0;
+}
+.fourthbox {
+  background-image: url('./Assets/Photos/Rectangle\ 56.png');
+  background-position: -10rem 0;
+}
+
+.mid-section {
+  width: 80vw;
+  margin-top: 8rem;
+}
+.gameboxSecond {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 3rem 0rem;
+  margin-left: 8rem;
+}
+.left-img {
+  width: 100vw;
+}
+.left-img img {
+  width: 480px;
+  height: 480px;
+  object-position: cover;
+}
+.left-img img:hover{
+  transform: scale(1.1);
+  transition: transform 280ms ease-out 50ms;
+}
+
+.gameright-text {
+  width: 100vw;
+  margin-top: -5rem;
+}
+.gameright-text h1 {
+  font-size: 46px;
+  margin: 3rem 0;
+}
+.gameright-text p {
+  font-size: 15px;
+  line-height: 2rem;
+}
+.btn-secondbox,
+.btn-secondbox2 {
+  border: 2px solid #f4694c;
+  color: #f4694c;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  margin: 0 0.2rem;
+  margin-top: 3rem;
+}
+.btn-secondbox:hover,
+.btn-secondbox2:hover {
+  color: #f8f8f8;
+  background-color: #f4694c;
+  transition: 0.7s;
+}
+.recomended {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem;
+  width: 90vw;
+  margin-left: 6rem;
+
+}
+.recomended-textleft h1 {
+  font-size: 35px;
+}
+.btn-leftarrow {
+  border: none;
+  padding: 1rem;
+  background-color: #eec8c0;
+}
+
+.btn-rightarrow img {
+  width: 1.5rem;
+
+}
+
+.btn-rightarrow {
+  background-color: #f4694c;
+}
+.btn-rightarrow:hover{
+  transform: scale(1.1);
+  transition: transform 280ms ease-out 50ms;
+} 
+.btn-leftarrow:hover{
+  transform: scale(1.1);
+  transition: transform 280ms ease-out 50ms;
+}
+
+.first-recomended-games {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin-left: 2.5rem;
+  margin-bottom:10rem;
+}
+
+.left-action {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.left-action img {
+  width: 230px;
+  height: 300px;
+  margin-right: 2rem;
+}
+.left-action img:hover{
+  transform: scale(1.2);
+  transition: transform 280ms ease-out 50ms;
+}
+.left-action h1 {
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.left-action p {
+  color: #797979;
+  margin-top: 1rem;
+}
+p span {
+  color: #f4694c;
+}
+.btn-act-download {
+  font-weight: 600;
+  padding: 1.3rem 3rem;
+  background-color: #f4694c;
+  margin-top: 1rem;
+}
+.btn-act-download:hover{
+  background-color:#651201 ;
+  transform: scale(1.02);
+  transition: transform 280ms ease-out 50ms;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+.tex-lastsection {
+  overflow: hidden;
+  width:100vw;
+  height: 140vh;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+
+}
+.tex-lastsection .head {
+  font-size: 40px;
+  text-align: center;
+  color: #f8f8f8;
+  margin-top:-3em;
+  margin-bottom: 2rem;
+}
+.imgtext{
+  display: flex;
+  justify-content: space-around;
+  margin-left: -15em;
+  z-index:10;
+}
+.imgtext-img img{
+   width:500px;
+   height:580px;
+   margin-right:2rem;
+
+
+}
+.imgtext-text{
+  margin-top:2rem;
+  color: #c2bebe;
+  font-size: 12px;
+}
+.fent-text {
+
+  color: #0d0d0d;
+  font-size: 5.7em;
+  text-shadow: -1px 1px 0 #282828, 1px 1px 0 #282828, 1px -1px 0 #282828,
+    -1px -1px 0 #282828;
+    position: absolute;
+    top:20rem;
+    right:-1rem; 
+}
+.img-second{
+  margin-left: 1rem;
+  position: absolute;
+  width:400px;
+  height:500px;
+  top:25em;
+}
+.img-third{
+  position: absolute;
+  width:300px;
+  top:41em;
+  right: 7em;
+}
+ .banner-gor{
+ width:100vw;
+ background-image: url("./Assets/Photos/Rectangle\ 606.png");
+
+ background-size:100% 100%;
+ background-repeat: no-repeat;
+ }
+
+.text-banner{
+  width: 100vw;
+  height: 50vh;
+
+ background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color:hwb(0 97% 3%);
+  
+}
+.text-banner h1 {
+  margin:1rem 0;
+
+
+}
+.text-banner p{ 
+  color: #c2bebe;
+  font-size: 12px;
+ margin: 1rem;
+}
+/* --------------------------------------------------- */
+.footer{
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content:space-around;
+  justify-items: center;
+  color: #c2bebe;
+  padding: 2rem;
+}
+.logo img{
+margin-bottom:1rem;
+margin-left: 0.5rem;
+}
+.logo p{
+  line-height:2rem;
+  margin-bottom:2rem;
+}
+.links-for-footer li{
+  list-style-type: none;
+  font-size: 18px;
+  margin:1rem 0;
+}
+.links-for-footer li a{
+  text-decoration: none;
+  color: #c2bebe;
+
+}
+.links-for-footer li a:hover{
+ color: #f4694c;
+}
+/* ---------------------------------------------? experiment */
