@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #d5d5d5;
+    background-color: #eeeeee;
 }
  /* --------------------------------------------------- */
  /* golbla buttons */
@@ -102,7 +102,7 @@ body{
 /* ------------------------------main add----------------------------------- */
 .models{
 
-    background-color: #d5d5d5;
+    background-color: #eeeeee;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -165,3 +165,160 @@ body{
 .btn-card{
     padding: 0.8rem 1.5rem;
 }
+/* ______________________________________________________________________ */
+.img-trendy{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    color: #313131;
+    margin-top:10rem;
+
+
+}
+.img3oftrendy img{
+ width: 79%;
+}
+.img2oftrendy img{
+    width: 401px;
+    height: 430px;
+    border-radius: 2rem;
+    position: absolute;
+    left: 6.8rem;
+    bottom: 7rem;
+
+
+}
+#trendheading{
+    margin-top:-12rem;
+    color: #313131;
+}
+.img-trendynew{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10rem;
+   position: relative;
+
+
+}
+.img3oftrendynew img{
+    width: 40vw;
+    margin-left: 12rem;
+
+}
+.img2oftrendynew img{
+    width: 440px;
+    height: 460px;
+    border-radius: 2rem;
+    position: absolute;
+    right: 7.6rem;
+    bottom: 8rem;
+
+
+}
+#trendheading2{
+    color: #313131;
+    margin-top: -7rem;
+    margin-left:8rem;
+}
+#trendheading2 h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+/* -------------------------------------------------------------------- */
+.lastsection{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+ 
+    padding: 4rem 10rem;
+
+}
+.fromdiv{
+    width: 90vw;
+    background-color: #6663e9;
+  
+    padding: 5rem;
+    border-radius: 3rem;
+    color: #fff;
+    position: relative;
+}
+.fromdiv h1{
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+.fromdiv p{
+    margin: 1rem 0;
+}
+.fromdiv input{
+    margin-top: 2rem;
+  padding:0.8rem 0;
+  padding-right: 14rem;
+  padding-left: 3rem;
+    border-radius: 1rem;
+    outline: none;
+    forced-color-adjust: none;
+    border: none;
+    background-color: #7876ff;
+    color: #fff;
+
+   
+}
+.fromdiv input::placeholder{
+    color: #fff;
+    margin-left: -6rem;
+}
+.fromdiv img{
+    z-index: 23;
+    position: absolute;
+    bottom: 6.7rem;
+    left: 20rem;
+
+}
+.btn-form{
+    background-color: #eeeeee;
+    color: #6663e9;
+    padding:0.8rem 2rem;
+    margin-left: 1rem;
+}
+.btn-form:hover{
+   background-color: #fff;
+   font-weight: 600;
+}
+/* ____________________________________footer____________________________________________ */
+.footer{
+    display: flex;
+    
+    justify-content:space-around;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .logo img{
+    width: 170px;
+  margin-bottom:1rem;
+  margin-left: 0.5rem;
+  }
+  .iconinsta img{
+    width: 50px;
+  }
+  .logo p{
+    line-height:2rem;
+    margin-bottom:2rem;
+  }
+  .links-for-footer li{
+    list-style-type: none;
+    font-size: 18px;
+    margin:2rem 0;
+  }
+  .links-for-footer li a{
+    text-decoration: none;
+    color: #313131;
+  
+  }
+  .links-for-footer li a:hover{
+   color: #6663e9;
+  }
