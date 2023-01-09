@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- component -->
+    <body class="bg-white">
+      <header class="z-10 sticky top-0 w-[100%]">
+        <nav
+          class="relative px-4 py-4 flex justify-between items-center bg-white lg:p-[2rem] bg-gradient-to-r from-slate-100 to-slate-50 sticky top-0"
+        >
+          <a class="text-xl font-bold leading-none" href="#">
+            iAmBharaT
+          </a>
+          <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-black p-3">
+              <svg
+                class="block h-4 w-4 fill-current"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          <ul
+            class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center justify-end lg:w-[90%] lg:space-x-7"
+          >
+            <li>
+              <a class="text-sm text-gray-400black font-bold" href="#">Home</a>
+            </li>
+            <li class="text-gray-300"></li>
+            <li>
+              <a
+                class="text-sm text-gray-400 hover:text-black font-bold"
+                href="#"
+              >
+                About
+              </a>
+            </li>
+            <li class="text-gray-300"></li>
+            <li>
+              <a
+                class="text-sm text-gray-400 hover:text-black font-bold"
+                href="#"
+              >
+                Blogs
+              </a>
+            </li>
+            <li class="text-gray-300"></li>
+            <li>
+              <a
+                class="text-sm text-gray-400 hover:text-black font-bold"
+                href="#"
+              >
+                Projects
+              </a>
+            </li>
+            <li class="text-gray-300"></li>
+            <li>
+              <a
+                class="text-sm text-gray-400 hover:text-black font-bold"
+                href="#"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+          <div
+            class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+          ></div>
+          <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto h-[100vh] "
+          >
+            <div class="flex items-center mb-8">
+              <a class="mr-auto text-xl font-bold leading-none" href="#">
+                Mr.B
+              </a>
+              <button class="navbar-close">
+                <svg
+                  class="h-6 w-6 text-gray-400 cursor-pointer hover:text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul>
+                <li class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
+                    href="#"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
+                    href="#"
+                  >
+                    About
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
+                    href="#"
+                  >
+                    Blogs
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
+                    href="#"
+                  >
+                    Projects
+                  </a>
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
+                    href="#"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-auto">
+              <p class="my-4 text-xs text-center text-gray-400">
+                <span>Copyright © 2022</span>
+              </p>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- ------------------------------------------------- -->
+      <section
+        class="absolute invisible md:invisible lg:visible lg:relative h-[100%]"
+      >
+        <img
+          src="./resources/images/heroimg.jpg"
+          alt=""
+          class="contain w-[100%] h-[100%]"
+        />
+        <div class="w-[100%] h-[100%] bg-indigo-500  bg-clip-padding backdrop-filter backdrop-blur-none bg-opacity-50 absolute top-0 "></div>
+        
+        <div class="absolute top-[15%] left-[10%]">
+          <h1 class="text-[#0D0D0D] pt-4 text-xl text-white">
+            Hello, my name is
+            <span class="pb-1 pr-1 pl-1 text-white bg-black rounded-sm text-sm">
+              BHARAT CHAVHAN
+            </span>
+          </h1>
+          <p
+            class="mt-2 text-white text-2xl fon:t-bold animate-bounce pt-4 text-6xl font-bold"
+          >
+            I'm a Developer
+          </p>
+          <p class="mt-4 mb-6 text-white w-[55%]">
+            I'm a Full-Stack Web Developer. My expertise is to create and design
+            Websites. <br>
+           <q>
+            Helping out a team member opens an opportunity for getting
+            help back. It will boost your passion because youre not alone on
+            this journey.
+           </q> 
+          </p>
+
+          <button
+            class="border-[1px] bg-white shadow-[rgba(0,_0,_0,_0.5)_0px_30px_90px] pt-[0.8rem] pb-[0.8rem] pl-8 pr-8 text-[#4f46e5] rounded-3xl mr-4 md:bg-white md:text-[#4f46e5] md:font-bold"
+          >
+            Resume
+          </button>
+
+          <button
+            class="bg-gradient-to-r from-blue-600 to-violet-600 shadow-[0_20px_60px_rgba(8,_112,_184,_0.7)] pt-[0.8rem] pb-[0.8rem] pl-8 pr-8 text-white rounded-3xl md:bg-black md:text-white md:font-bold"
+          >
+            Contact
+          </button>
+        </div>
+
+        <div
+          class="absolute top-[8.4rem] right-[4.4rem] w-[10rem] h-[10rem] bg-white z-0"
+        >
+          <div
+            class="absolute top-[14.1rem] right-[11.1rem] w-[10rem] h-[10rem] bg-white z-1"
+          >
+        </div>
+        </div>
+        <img
+          src="./resources/images/DSC_6096.JPG"
+          alt=""
+          class="absolute top-[9rem] right-[5rem] w-[20rem] h-[23rem]"
+        />
+
+
+      </section>
+      <section class="relative lg:w-[40%] lg:top-[20rem] lg:absolute lg:invisible" id="zin">
+        <div
+          class="bg-gradient-to-r from-blue-600 to-violet-600 w- m-4 bgegg m-4"
+        >
+          <img
+            src="./resources/images/heroimg.jpg"
+            alt=""
+            class="imgofbg w-[100%] h-[100%]"
+          />
+          <style>
+            .imgofbg {
+              border-radius: 28% 72% 64% 36% / 50% 46% 54% 50%;
+              transform: rotate(10deg);
+            }
+            .bgegg {
+              border-radius: 28% 72% 64% 36% / 50% 46% 54% 50%;
+              transform: rotate(-10deg);
+            }
+          </style>
+        </div>
+        <div
+          class="text-center w-[100%] flex flex-col justify-center md:absolute md:top-[30%] md:left-[20%] md:bg-none lg:invisible lg:flex-row"
+        >
+          <h1 class="text-[#0D0D0D] pt-4 md:text-2xl">
+            Hello, my name is
+            <span
+              class="pb-1 pr-1 pl-1 text-[#4f46e5] md:text-[#4f46e5] md:bg-white md:rounded-sm md:text-lg"
+            >
+              BHARAT CHAVHAN
+            </span>
+          </h1>
+          <p
+            class="mt-2 text-[#4f46e5] text-2xl font-bold animate-bounce pt-4 md:text-white md:text-5xl"
+          >
+            I'm a Developer
+          </p>
+          <p class="text-sm mt-4 md:hidden">
+            I'm a Full-Stack Web Developer. My expertise is to create and design
+            Websites
+          </p>
+          <div class="pt-4 pb-4">
+            <button
+              class="border-[1px] bg-white shadow-[rgba(0,_0,_0,_0.5)_0px_30px_90px] pt-[0.5rem] pb-[0.5rem] pl-5 pr-5 text-[#4f46e5] rounded-3xl mr-4 md:bg-white md:text-[#4f46e5] md:font-bold"
+            >
+              Resume
+            </button>
+
+            <button
+              class="bg-gradient-to-r from-blue-600 to-violet-600 shadow-[0_20px_60px_rgba(8,_112,_184,_0.7)] pt-[0.5rem] pb-[0.5rem] pl-5 pr-5 text-white rounded-3xl md:bg-black md:text-white md:font-bold"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- --------------------------------------------- -->
+      <section class="invisible  md:visible lg:relative lg:top-[8rem] lg:h-[80vh]  lg:flex lg:m-2 lg:mt-[2rem] lg:mb-[4rem]">
+        <section class=" md:invisible md:absolute lg:w-[50%] lg:top-[20rem] lg:visible lg:relative lg:top-[0rem]" id="zin">
+          <div
+            class="bg-gradient-to-r from-blue-600 to-violet-600 w- m-4 bgegg m-4"
+          >
+            <img
+              src="./resources/images/heroimg.jpg"
+              alt=""
+              class="imgofbg w-[100%] h-[100%]"
+            />
+            <style>
+              .imgofbg {
+                border-radius:60% 40% 10% 90% / 57% 83% 17% 43% ;
+                transform: rotate(10deg);
+              }
+              .bgegg {
+                border-radius: 60% 40% 10% 90% / 57% 83% 17% 43% ;
+                transform: rotate(-10deg);
+              }
+            </style>
+          </div>
+          <div
+            class="text-center w-[100%] flex flex-col justify-center md:absolute md:top-[30%] md:left-[20%] md:bg-none lg:invisible lg:flex-row"
+          >
+            <h1 class="text-[#0D0D0D] pt-4 md:text-2xl">
+              Hello, my name is
+              <span
+                class="pb-1 pr-1 pl-1 text-[#4f46e5] md:text-[#4f46e5] md:bg-white md:rounded-sm md:text-lg"
+              >
+                BHARAT CHAVHAN
+              </span>
+            </h1>
+            <p
+              class="mt-2 text-[#4f46e5] text-2xl font-bold animate-bounce pt-4 md:text-white md:text-5xl"
+            >
+              I'm a Developer
+            </p>
+            <p class="text-sm mt-4 md:hidden">
+              I'm a Full-Stack Web Developer. My expertise is to create and design
+              Websites
+            </p>
+            <div class="pt-4 pb-4">
+              <button
+                class="border-[1px] bg-white shadow-[rgba(0,_0,_0,_0.5)_0px_30px_90px] pt-[0.5rem] pb-[0.5rem] pl-5 pr-5 text-[#4f46e5] rounded-3xl mr-4 md:bg-white md:text-[#4f46e5] md:font-bold"
+              >
+                Resume
+              </button>
+  
+              <button
+                class="bg-gradient-to-r from-blue-600 to-violet-600 shadow-[0_20px_60px_rgba(8,_112,_184,_0.7)] pt-[0.5rem] pb-[0.5rem] pl-5 pr-5 text-white rounded-3xl md:bg-black md:text-white md:font-bold"
+              >
+                Contact
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="lg:w-[50%] lg:ml-5">
+        <h1 class="text-4xl font-bold mt-[5rem] ml-[3.5rem] lg:m-0">About me</h1>
+        <p class="mt-2 text-lg font-bold ml-[3.5rem] lg:m-0">
+          I'm a Full-Stack Web Developer.
+        </p>
+        <div class="flex flex-col items-center">
+          <p class="mt-2 lg:text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, et.
+            Lorem ipsum dolor sit amet.
+          </p>
+          <p class="mt-4 mb-4 lg:text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, et.
+            Lorem ipsum dolor sit amet
+            <br />
+            ipsum dolor sit amet consectetur, adipisicing elit. Fuga, et. Lorem
+            ipsum dolor sit amet..
+          </p>
+          <div class="border-b border-black w-[90%]"></div>
+        </div>
+        <div class="flex justify-around mt-2 lg:text-sm">
+          <div>
+            <div class="mt-5 mb-5">
+              <span class="text-black font-bold">Name:</span>
+              Bharat Chavhan
+            </div>
+            <div class="mt-5 mb-5">
+              <span class="text-black font-bold ml-3">Age:</span>
+              27
+            </div>
+          </div>
+          <div>
+            <div class="mt-5 mb-5 text-[#4f46e5]">
+              <span class="text-black font-bold mr-2">Email:</span>
+              <a href="#">bharatchavhan141@gmail.com</a>
+            </div>
+            <div class="mt-5 mb-5">
+              <span class="text-black font-bold mr-2">from:</span>
+              Mahgaon, Washim Maharashtra-444506
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+      <!-- --------------about for mobile ------------- -->
+      <section class=" absolute top-[38rem]  lg:w-[50%] lg:ml-5 md:invisible lg:invisible">
+        <h1 class="text-4xl font-bold ml-2">About me</h1>
+        <p class="mt-2 text-lg font-bold ml-2  ">
+          I'm a Full-Stack Web Developer.
+        </p>
+        <div class="flex flex-col items-center justify-center">
+          <p class="mt-2 text-md ml-2">
+            Lorem ipsum dolor sit amet consectetur,add  <br> elit. Fuga, et.
+            Lorem ipsum Lorem ipsum dolor sit amet.
+          </p>
+          <p class="mt-4 mb-4 text-md ml-2">
+            Lorem ipsum dolor sit amet consectetur,elit.
+            ipsum dolor sit amet consectetur, adipisic. <br> Fuga, et. Lorem
+            ipsum dolor sit amet.
+          </p>
+          <div class="border-b border-[#CAD5E2] w-[90%]"></div>
+        </div>
+        <div class="ml-2 mt-2 ">
+          <div>
+            <div class="mt-5 mb-5">
+              <span class="text-black font-bold">Name:</span>
+              Bharat Chavhan
+            </div>
+            <div class="mt-5 mb-5">
+              <span class="text-black font-bold mr-3 ">Age:</span>
+              27
+            </div>
+          </div>
+          <div>
+            <div class="mt-5 mb-5 text-[#4f46e5]">
+              <span class="text-black font-bold mr-2">Email:</span>
+              <a href="#">bharatchavhan141@gmail.com</a>
+            </div>
+            <div class="mt-5 mb-5">
+              <span class="text-black font-bold mr-2">from:</span>
+              Mahgaon, Washim Maharashtra.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --------------about for mobile ------------- -->
+    </body>
+
+    <script>
+      // Burger menus
+      document.addEventListener('DOMContentLoaded', function () {
+        // open
+        const burger = document.querySelectorAll('.navbar-burger')
+        const menu = document.querySelectorAll('.navbar-menu')
+
+        if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener('click', function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden')
+              }
+            })
+          }
+        }
+
+        // close
+        const close = document.querySelectorAll('.navbar-close')
+        const backdrop = document.querySelectorAll('.navbar-backdrop')
+
+        if (close.length) {
+          for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden')
+              }
+            })
+          }
+        }
+
+        if (backdrop.length) {
+          for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener('click', function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden')
+              }
+            })
+          }
+        }
+      })
+    </script>
+  </body>
+</html>
