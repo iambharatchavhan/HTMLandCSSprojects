@@ -1,0 +1,371 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;1,100;1,200;1,300&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,400;1,600&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&display=swap'); 
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.mobile-header{
+  position: fixed;
+  top:0;
+  display: flex;
+  justify-content: space-between;
+  justify-items:center;
+  align-items: center;
+  padding:1rem;
+  width:100vw;
+  background-color:#fff;
+z-index: 10;
+
+ 
+}
+.logo{
+  
+  font-size:0.7rem;
+  color: aliceblue;
+  padding:2px;
+  background-color: #1b1b1b;
+  border: 1px solid black;
+  margin-left: 5rem;
+  z-index: 20;
+
+}
+.logo-i{
+  color:#ff6200;
+}
+
+.navition ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 5rem;
+}
+.navition ul a{
+  text-decoration: none;
+  padding:1rem 1.3rem;
+  margin:0 2rem;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+.navition ul a:hover{
+  color: #1d1de7;
+}
+
+
+.burger{
+  display: none;
+
+}
+.burger .burgerbtn{
+  background: none;
+  border: none;
+  margin-right:1rem;
+}
+.burger .burgerbtn img{
+  width:2rem;
+}
+.hero-section{
+  background-image: url("./resources/images/shapelined-_JBKdviweXI-unsplash.jpg");
+  -webkit-background-size:cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+  background-position:center;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+#parenet-hero{
+  display: flex;
+  justify-content: center;
+  justify-content:space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  backdrop-filter: blur(0px);
+  background-color: rgba(29,29,231,0.5);
+  z-index:0;
+
+  /* From https://css.glass */
+
+}
+
+.left-text-div{
+ position: absolute;
+ left:10rem;
+ top:16rem;
+}
+.left-text-div h1{
+  font-size:1rem;
+  color: white;
+  margin-bottom: 1rem;
+
+}
+.paragraphOne{
+  display: none;
+}
+.left-text-div p{
+ font-size:1.3rem;
+ font-weight: 500;
+ color: #fff;
+ line-height: 2rem;
+}
+
+.container p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.container {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 10s infinite;
+}
+
+.first div {
+  font-weight:700;
+  color: #fff;
+}
+.second div {
+  font-weight:700;
+  color: #fff;
+}
+.third div {
+  font-weight:700;
+  color: #fff;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+/* --------------------buttons-------------------------- */
+.btn-hero-left, .btn-hero-right{
+  padding:0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  margin-top:2rem;
+  border: none;
+  color: #1b1b1b;
+  background-color:#fff ;
+  cursor: pointer;
+}
+.btn-hero-right{
+  background-color: #3e43e9;
+  color: #fff;
+  margin-left: 1.5rem;
+}
+.btn-hero-left:hover{
+  color: #3e43e9;
+}
+.righ-img-div img{
+  position: absolute;
+  bottom: 9rem;
+  right: 20rem;
+  width:300px;
+}
+.mtdivone{
+  background-color: #fff;
+  width:250px;
+  height:250px;
+  position: absolute;
+  bottom: 8rem;
+  right: 19.1rem;
+  z-index: -1;
+}
+.mtdivtwo{
+  background-color: #fff;
+  width:250px;
+  height:250px;
+  position: absolute;
+  bottom:17.8rem;
+  right: 24rem;
+  z-index: -1;
+}
+/* ----------mediaa queries---------------- */
+@media only screen and (max-width: 1224px){
+ 
+ 
+ 
+  .left-text-div p{
+   font-size:1rem;
+   color: white;
+   margin-bottom: 1rem;
+   line-height:1.4rem;
+ 
+ }
+ 
+ .righ-img-div img{
+   bottom: 9rem;
+   right: 3rem;
+   width:300px;
+ }
+ .mtdivone{
+   background-color: #fff;
+   width:250px;
+   height:250px;
+   position: absolute;
+   bottom: 8rem;
+   right: 2rem;
+   z-index: -1;
+ }
+ .mtdivtwo{
+   background-color: #fff;
+   width:250px;
+   height:250px;
+   position: absolute;
+   bottom:17.5rem;
+   right: 7rem;
+   z-index: -1;
+ 
+}
+}
+/* kf;ldfks;lf */
+@media only screen and (max-width: 998px) {
+ .logo{
+  margin:0;
+ }
+    .burger{
+      display: block;
+      margin: 0;
+    }
+ .navition{
+  display: none;
+ }
+ .left-text-div{
+   width:65%;
+     
+ }
+ .left-text-div{
+  left: 1rem;
+ }
+
+ .left-text-div p{
+  font-size:1rem;
+  color: white;
+  margin-bottom: 1rem;
+  line-height:1.4rem;
+
+}
+.righ-img-div img{
+  bottom: 9rem;
+  right: 3rem;
+  width:200px;
+}
+.mtdivone{
+  background-color: #fff;
+  width:150px;
+  height:150px;
+  position: absolute;
+  bottom: 8.2rem;
+  right: 2.2rem;
+  z-index: -1;
+}
+.mtdivtwo{
+  background-color: #fff;
+  width:150px;
+  height:150px;
+  position: absolute;
+  bottom:16rem;
+  right: 7rem;
+  z-index: -1;
+}
+ /* ---------tablet wive hero-------------- */
+
+}
+
+/* small laptop vie --------------- */
+@media only screen and (max-width: 600px)
+ {
+
+  /* _______ */
+  .righ-img-div{
+    display: none;
+  }
+
+  .left-text-div{
+    margin-top: -5rem;
+    width:100%;
+  }
+  .paragraph{
+     display:none;
+  }
+  .paragraphOne{
+    display: block;
+    margin-left: -2.7rem;
+    padding:2rem;
+  }
+  .paragraphOne p{
+    font-size:1.2rem;
+    line-height: 2rem;
+    margin-left: 0.2rem;
+  }
+  .btn-hero-left{
+    margin-left: 2rem;
+  }
+  .container p {
+   font-size:1.5rem;
+  }
+  .container {
+    color: #e5e5e5;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-left: -3rem;
+  }
+  
+  .animation {
+    height:50px;
+    overflow:hidden;
+    margin-left: 1rem;
+  }
+  
+ 
+  
+  .animation div:first-child {
+    animation: text-animation 10s infinite;
+  }
+ 
+
+ 
+  /* _______ */
+
+}

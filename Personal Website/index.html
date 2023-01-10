@@ -1,461 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <!-- component -->
-    <body class="bg-white">
-      <header class="z-10 sticky top-0 w-[100%]">
-        <nav
-          class="relative px-4 py-4 flex justify-between items-center bg-white lg:p-[2rem] bg-gradient-to-r from-slate-100 to-slate-50 sticky top-0"
-        >
-          <a class="text-xl font-bold leading-none" href="#">
-            iAmBharaT
-          </a>
-          <div class="lg:hidden">
-            <button class="navbar-burger flex items-center text-black p-3">
-              <svg
-                class="block h-4 w-4 fill-current"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Mobile menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-              </svg>
-            </button>
-          </div>
-          <ul
-            class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center justify-end lg:w-[90%] lg:space-x-7"
-          >
-            <li>
-              <a class="text-sm text-gray-400black font-bold" href="#">Home</a>
-            </li>
-            <li class="text-gray-300"></li>
-            <li>
-              <a
-                class="text-sm text-gray-400 hover:text-black font-bold"
-                href="#"
-              >
-                About
-              </a>
-            </li>
-            <li class="text-gray-300"></li>
-            <li>
-              <a
-                class="text-sm text-gray-400 hover:text-black font-bold"
-                href="#"
-              >
-                Blogs
-              </a>
-            </li>
-            <li class="text-gray-300"></li>
-            <li>
-              <a
-                class="text-sm text-gray-400 hover:text-black font-bold"
-                href="#"
-              >
-                Projects
-              </a>
-            </li>
-            <li class="text-gray-300"></li>
-            <li>
-              <a
-                class="text-sm text-gray-400 hover:text-black font-bold"
-                href="#"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="navbar-menu relative z-50 hidden">
-          <div
-            class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
-          ></div>
-          <nav
-            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto h-[100vh] "
-          >
-            <div class="flex items-center mb-8">
-              <a class="mr-auto text-xl font-bold leading-none" href="#">
-                Mr.B
-              </a>
-              <button class="navbar-close">
-                <svg
-                  class="h-6 w-6 text-gray-400 cursor-pointer hover:text-black"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div>
-              <ul>
-                <li class="mb-1">
-                  <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
-                    href="#"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li class="mb-1">
-                  <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
-                    href="#"
-                  >
-                    About
-                  </a>
-                </li>
-                <li class="mb-1">
-                  <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
-                    href="#"
-                  >
-                    Blogs
-                  </a>
-                </li>
-                <li class="mb-1">
-                  <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
-                    href="#"
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li class="mb-1">
-                  <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black rounded"
-                    href="#"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-auto">
-              <p class="my-4 text-xs text-center text-gray-400">
-                <span>Copyright © 2022</span>
-              </p>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <!-- ------------------------------------------------- -->
-      <section
-        class="absolute invisible md:invisible lg:visible lg:relative h-[100%]"
-      >
-        <img
-          src="./resources/images/heroimg.jpg"
-          alt=""
-          class="contain w-[100%] h-[100%]"
-        />
-        <div class="w-[100%] h-[100%] bg-indigo-500  bg-clip-padding backdrop-filter backdrop-blur-none bg-opacity-50 absolute top-0 "></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>iAmBharat</title>
+</head>
+<body>
+    <header class="mobile-header">
         
-        <div class="absolute top-[15%] left-[10%]">
-          <h1 class="text-[#0D0D0D] pt-4 text-xl text-white">
-            Hello, my name is
-            <span class="pb-1 pr-1 pl-1 text-white bg-black rounded-sm text-sm">
-              BHARAT CHAVHAN
-            </span>
-          </h1>
-          <p
-            class="mt-2 text-white text-2xl fon:t-bold animate-bounce pt-4 text-6xl font-bold"
-          >
-            I'm a Developer
-          </p>
-          <p class="mt-4 mb-6 text-white w-[55%]">
-            I'm a Full-Stack Web Developer. My expertise is to create and design
-            Websites. <br>
-           <q>
-            Helping out a team member opens an opportunity for getting
-            help back. It will boost your passion because youre not alone on
-            this journey.
-           </q> 
-          </p>
-
-          <button
-            class="border-[1px] bg-white shadow-[rgba(0,_0,_0,_0.5)_0px_30px_90px] pt-[0.8rem] pb-[0.8rem] pl-8 pr-8 text-[#4f46e5] rounded-3xl mr-4 md:bg-white md:text-[#4f46e5] md:font-bold"
-          >
-            Resume
-          </button>
-
-          <button
-            class="bg-gradient-to-r from-blue-600 to-violet-600 shadow-[0_20px_60px_rgba(8,_112,_184,_0.7)] pt-[0.8rem] pb-[0.8rem] pl-8 pr-8 text-white rounded-3xl md:bg-black md:text-white md:font-bold"
-          >
-            Contact
-          </button>
+        <div class="logo">
+           <h1> <span class="logo-i">i</span>AmBHARAT</h1> 
+        </div>
+        <div>
+            <nav class="navition">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projecs</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger">
+            <button class="burgerbtn"> <img src="./resources/images/hamburger-menu-more-svgrepo-com (1).svg" alt=""> </button>
         </div>
 
-        <div
-          class="absolute top-[8.4rem] right-[4.4rem] w-[10rem] h-[10rem] bg-white z-0"
-        >
-          <div
-            class="absolute top-[14.1rem] right-[11.1rem] w-[10rem] h-[10rem] bg-white z-1"
-          >
-        </div>
-        </div>
-        <img
-          src="./resources/images/DSC_6096.JPG"
-          alt=""
-          class="absolute top-[9rem] right-[5rem] w-[20rem] h-[23rem]"
-        />
-
-
-      </section>
-      <section class="relative lg:w-[40%] lg:top-[20rem] lg:absolute lg:invisible" id="zin">
-        <div
-          class="bg-gradient-to-r from-blue-600 to-violet-600 w- m-4 bgegg m-4"
-        >
-          <img
-            src="./resources/images/heroimg.jpg"
-            alt=""
-            class="imgofbg w-[100%] h-[100%]"
-          />
-          <style>
-            .imgofbg {
-              border-radius: 28% 72% 64% 36% / 50% 46% 54% 50%;
-              transform: rotate(10deg);
-            }
-            .bgegg {
-              border-radius: 28% 72% 64% 36% / 50% 46% 54% 50%;
-              transform: rotate(-10deg);
-            }
-          </style>
-        </div>
-        <div
-          class="text-center w-[100%] flex flex-col justify-center md:absolute md:top-[30%] md:left-[20%] md:bg-none lg:invisible lg:flex-row"
-        >
-          <h1 class="text-[#0D0D0D] pt-4 md:text-2xl">
-            Hello, my name is
-            <span
-              class="pb-1 pr-1 pl-1 text-[#4f46e5] md:text-[#4f46e5] md:bg-white md:rounded-sm md:text-lg"
-            >
-              BHARAT CHAVHAN
-            </span>
-          </h1>
-          <p
-            class="mt-2 text-[#4f46e5] text-2xl font-bold animate-bounce pt-4 md:text-white md:text-5xl"
-          >
-            I'm a Developer
-          </p>
-          <p class="text-sm mt-4 md:hidden">
-            I'm a Full-Stack Web Developer. My expertise is to create and design
-            Websites
-          </p>
-          <div class="pt-4 pb-4">
-            <button
-              class="border-[1px] bg-white shadow-[rgba(0,_0,_0,_0.5)_0px_30px_90px] pt-[0.5rem] pb-[0.5rem] pl-5 pr-5 text-[#4f46e5] rounded-3xl mr-4 md:bg-white md:text-[#4f46e5] md:font-bold"
-            >
-              Resume
-            </button>
-
-            <button
-              class="bg-gradient-to-r from-blue-600 to-violet-600 shadow-[0_20px_60px_rgba(8,_112,_184,_0.7)] pt-[0.5rem] pb-[0.5rem] pl-5 pr-5 text-white rounded-3xl md:bg-black md:text-white md:font-bold"
-            >
-              Contact
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- --------------------------------------------- -->
-      <section class="invisible  md:visible lg:relative lg:top-[8rem] lg:h-[80vh]  lg:flex lg:m-2 lg:mt-[2rem] lg:mb-[4rem]">
-        <section class=" md:invisible md:absolute lg:w-[50%] lg:top-[20rem] lg:visible lg:relative lg:top-[0rem]" id="zin">
-          <div
-            class="bg-gradient-to-r from-blue-600 to-violet-600 w- m-4 bgegg m-4"
-          >
-            <img
-              src="./resources/images/heroimg.jpg"
-              alt=""
-              class="imgofbg w-[100%] h-[100%]"
-            />
-            <style>
-              .imgofbg {
-                border-radius:60% 40% 10% 90% / 57% 83% 17% 43% ;
-                transform: rotate(10deg);
-              }
-              .bgegg {
-                border-radius: 60% 40% 10% 90% / 57% 83% 17% 43% ;
-                transform: rotate(-10deg);
-              }
-            </style>
-          </div>
-          <div
-            class="text-center w-[100%] flex flex-col justify-center md:absolute md:top-[30%] md:left-[20%] md:bg-none lg:invisible lg:flex-row"
-          >
-            <h1 class="text-[#0D0D0D] pt-4 md:text-2xl">
-              Hello, my name is
-              <span
-                class="pb-1 pr-1 pl-1 text-[#4f46e5] md:text-[#4f46e5] md:bg-white md:rounded-sm md:text-lg"
-              >
-                BHARAT CHAVHAN
-              </span>
-            </h1>
-            <p
-              class="mt-2 text-[#4f46e5] text-2xl font-bold animate-bounce pt-4 md:text-white md:text-5xl"
-            >
-              I'm a Developer
-            </p>
-            <p class="text-sm mt-4 md:hidden">
-              I'm a Full-Stack Web Developer. My expertise is to create and design
-              Websites
-            </p>
-            <div class="pt-4 pb-4">
-              <button
-                class="border-[1px] bg-white shadow-[rgba(0,_0,_0,_0.5)_0px_30px_90px] pt-[0.5rem] pb-[0.5rem] pl-5 pr-5 text-[#4f46e5] rounded-3xl mr-4 md:bg-white md:text-[#4f46e5] md:font-bold"
-              >
-                Resume
-              </button>
-  
-              <button
-                class="bg-gradient-to-r from-blue-600 to-violet-600 shadow-[0_20px_60px_rgba(8,_112,_184,_0.7)] pt-[0.5rem] pb-[0.5rem] pl-5 pr-5 text-white rounded-3xl md:bg-black md:text-white md:font-bold"
-              >
-                Contact
-              </button>
+    </header>
+    <main>
+        <section class="hero-section">
+         <div class="hero-parent-container" id="parenet-hero">
+            <div class="left-text-div" >
+             <div class="container">
+                <p>Hello 👋 I'm</p>
+                <section class="animation">
+                  <div class="first"><div>Bharat Chavhan</div></div>
+                  <div class="second"><div>Web Developer</div></div>
+                  <div class="third"><div>Designer</div></div>
+                </section>
             </div>
-          </div>
+            <div class="paragraphOne">
+             <P id="paraOfmob">I'm a Full Stack Web Developer With extensive experience in projects of HTML/CSS. My expertise is to create and design Websites,Apis, and many more...</P>
+             <button class="btn-hero-left">Resume</button>
+             <button class="btn-hero-right">Contact</button>
+             </div>
+             <div class="paragraph">
+                <P id="paraOfmob">I'm a Full Stack Web Developer With extensive experience in <br> projects of HTML/CSS. My expertise is to create and <br> design Websites,Apis, and many more...</P>
+                <button class="btn-hero-left">Resume</button>
+                <button class="btn-hero-right">Contact</button>
+                </div>
+            </div>
+            <div class="righ-img-div">
+             <img src="./resources/images/enlarge_IMG_20220104_142633_203_-_Edited.png" alt="" >
+             <div class="mtdivone"></div>
+             <div class="mtdivtwo"></div>
+            </div>
+         </div>
         </section>
-        <section class="lg:w-[50%] lg:ml-5">
-        <h1 class="text-4xl font-bold mt-[5rem] ml-[3.5rem] lg:m-0">About me</h1>
-        <p class="mt-2 text-lg font-bold ml-[3.5rem] lg:m-0">
-          I'm a Full-Stack Web Developer.
-        </p>
-        <div class="flex flex-col items-center">
-          <p class="mt-2 lg:text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, et.
-            Lorem ipsum dolor sit amet.
-          </p>
-          <p class="mt-4 mb-4 lg:text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, et.
-            Lorem ipsum dolor sit amet
-            <br />
-            ipsum dolor sit amet consectetur, adipisicing elit. Fuga, et. Lorem
-            ipsum dolor sit amet..
-          </p>
-          <div class="border-b border-black w-[90%]"></div>
-        </div>
-        <div class="flex justify-around mt-2 lg:text-sm">
-          <div>
-            <div class="mt-5 mb-5">
-              <span class="text-black font-bold">Name:</span>
-              Bharat Chavhan
-            </div>
-            <div class="mt-5 mb-5">
-              <span class="text-black font-bold ml-3">Age:</span>
-              27
-            </div>
-          </div>
-          <div>
-            <div class="mt-5 mb-5 text-[#4f46e5]">
-              <span class="text-black font-bold mr-2">Email:</span>
-              <a href="#">bharatchavhan141@gmail.com</a>
-            </div>
-            <div class="mt-5 mb-5">
-              <span class="text-black font-bold mr-2">from:</span>
-              Mahgaon, Washim Maharashtra-444506
-            </div>
-          </div>
-        </div>
-      </section>
-      </section>
-      <!-- --------------about for mobile ------------- -->
-      <section class=" absolute top-[38rem]  lg:w-[50%] lg:ml-5 md:invisible lg:invisible">
-        <h1 class="text-4xl font-bold ml-2">About me</h1>
-        <p class="mt-2 text-lg font-bold ml-2  ">
-          I'm a Full-Stack Web Developer.
-        </p>
-        <div class="flex flex-col items-center justify-center">
-          <p class="mt-2 text-md ml-2">
-            Lorem ipsum dolor sit amet consectetur,add  <br> elit. Fuga, et.
-            Lorem ipsum Lorem ipsum dolor sit amet.
-          </p>
-          <p class="mt-4 mb-4 text-md ml-2">
-            Lorem ipsum dolor sit amet consectetur,elit.
-            ipsum dolor sit amet consectetur, adipisic. <br> Fuga, et. Lorem
-            ipsum dolor sit amet.
-          </p>
-          <div class="border-b border-[#CAD5E2] w-[90%]"></div>
-        </div>
-        <div class="ml-2 mt-2 ">
-          <div>
-            <div class="mt-5 mb-5">
-              <span class="text-black font-bold">Name:</span>
-              Bharat Chavhan
-            </div>
-            <div class="mt-5 mb-5">
-              <span class="text-black font-bold mr-3 ">Age:</span>
-              27
-            </div>
-          </div>
-          <div>
-            <div class="mt-5 mb-5 text-[#4f46e5]">
-              <span class="text-black font-bold mr-2">Email:</span>
-              <a href="#">bharatchavhan141@gmail.com</a>
-            </div>
-            <div class="mt-5 mb-5">
-              <span class="text-black font-bold mr-2">from:</span>
-              Mahgaon, Washim Maharashtra.
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- --------------about for mobile ------------- -->
-    </body>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius illum nihil praesentium ab odit ullam omnis nobis hic debitis magnam, quaerat earum, placeat veritatis fugit, beatae reiciendis suscipit maxime magni exercitationem dignissimos aperiam cupiditate iure. Mollitia, eaque at! Delectus exercitationem saepe commodi unde corporis possimus id voluptate excepturi hic in, doloribus nobis. Repellat corrupti reiciendis perferendis saepe iusto dolorem, alias optio molestiae laudantium porro quod incidunt expedita eveniet ex aperiam nihil quia nam voluptate possimus ab perspiciatis iste amet explicabo! Nam accusantium sequi neque deserunt hic ipsam saepe tempora odit? Molestias atque doloremque suscipit est asperiores rerum recusandae ducimus ratione, reprehenderit omnis, accusantium itaque? Vero, dolores amet commodi animi molestias id ab quam rerum fuga pariatur tenetur quia necessitatibus. Quae quas praesentium ut, nihil illo rem earum quia odio itaque ipsam maxime culpa sed veritatis, porro corporis. Mollitia, tempora! Suscipit molestias modi facilis eius quisquam molestiae fuga sint nobis doloribus fugiat. Cumque quo debitis deleniti. Eligendi quasi, distinctio impedit odio, voluptatem at minus magnam temporibus dolores porro rerum quisquam ipsam consectetur animi praesentium debitis molestiae nostrum facere fugit error officiis, placeat est doloremque. Labore, in quaerat minus illum autem vero, velit quos aut natus deleniti, excepturi eos provident id laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt eligendi nobis velit quasi fugiat accusantium, perspiciatis eaque perferendis doloremque atque tempora vitae ratione possimus odio. Incidunt, ex rerum explicabo aspernatur ducimus non adipisci deleniti eum unde sed est velit quaerat voluptatum molestias sit minus veritatis minima maiores, odit id illo dolores esse totam. Consequuntur non nam enim quos, labore optio. Sunt eius itaque fugit voluptatem perferendis molestiae ut praesentium iure consequuntur! Excepturi quia, aspernatur ullam placeat ea architecto minima harum veniam sequi incidunt totam deserunt dolorum, asperiores aperiam nostrum magnam ab voluptas repellat? Commodi, vero quos veniam nesciunt assumenda eos sed inventore laborum cum esse, sint et rem accusantium maxime modi molestias soluta reiciendis fuga voluptatem alias enim nisi laboriosam provident. Beatae incidunt harum inventore reiciendis laboriosam sapiente animi quod, veritatis doloribus obcaecati numquam voluptatibus minima! Ex qui laudantium odio impedit laboriosam quis pariatur perspiciatis corrupti tenetur non fugiat repellat adipisci minima, neque quia ducimus harum, iste, nihil eos? Optio ea placeat nulla dicta commodi, excepturi provident ex, quam exercitationem facilis officia sint cupiditate laborum reiciendis ab delectus repellat labore voluptates, vitae officiis dolore saepe voluptatem eos. Sed aperiam ea at incidunt doloremque porro provident cum? Optio nesciunt corporis asperiores hic vel eaque culpa, repellat ipsum voluptates. Eveniet quis totam ut dignissimos mollitia, eligendi eos culpa animi, vero nemo consequatur inventore non et aliquid maxime expedita. Nisi commodi, maxime molestias reiciendis quasi tenetur? Cum explicabo voluptas unde quo officia deleniti eius corrupti nostrum iste numquam ratione sequi quae expedita, omnis sunt voluptatum facere? Recusandae vitae error voluptatum atque consequuntur labore mollitia dolorum unde perferendis, doloremque cupiditate magnam consequatur quia nemo vero laborum soluta nesciunt aliquid amet accusantium pariatur dolorem? Vel reiciendis possimus praesentium iure eius ab at, eaque minima dolores vitae esse nihil molestias perferendis nam fugiat rerum molestiae veritatis autem ea amet. Consequatur, nesciunt ad. Dolores molestiae quod neque nemo exercitationem unde facere accusantium odit debitis veniam, impedit magnam consectetur perspiciatis nihil mollitia eveniet dolorem illum corporis eos tenetur minima quo id minus itaque. Maiores culpa suscipit est pariatur esse, libero nihil. Nulla totam aliquid sapiente sed aliquam officiis, asperiores fugit quo aut nisi, incidunt illum dolorem, voluptates vero. Provident aperiam doloremque ratione tempore sunt, ipsam neque voluptatibus nisi expedita aliquid et eum quo atque saepe voluptate consequatur eligendi earum minima, maiores eaque suscipit enim pariatur dignissimos culpa? Inventore porro architecto aperiam quod molestias laudantium reiciendis mollitia doloribus ea, modi et incidunt magnam cupiditate molestiae assumenda. Excepturi, aut doloremque sit harum unde obcaecati hic, nam tenetur eum debitis nihil dicta. Adipisci, in. Repudiandae illo minus rerum labore, expedita vero sequi at animi accusantium id cumque atque illum eaque assumenda, dolores officiis itaque placeat exercitationem! Nostrum explicabo beatae accusantium voluptatem, tempora voluptate aperiam. Unde, minima ratione aperiam dolore aliquid tenetur ducimus. Minima, qui aut minus ipsa temporibus aperiam beatae, culpa cumque optio reprehenderit dicta, asperiores quae laudantium? Sint repellat aperiam, quam ipsam voluptas repudiandae quae consectetur. Iure, debitis sit aut quos itaque at maiores accusamus veniam harum quia a, sunt earum fugiat neque dolores ad doloremque voluptatem fuga porro ratione. Esse reprehenderit quibusdam tempora quae, delectus at architecto repudiandae pariatur totam, nulla voluptatem voluptates doloremque iusto est maiores velit id facilis laborum vel? Iusto necessitatibus aliquid, ducimus quod corporis qui dolores facilis reprehenderit est rerum at? Praesentium, perspiciatis nesciunt? Qui natus tempora, neque molestias deserunt quam dolor omnis iste, provident, cupiditate ratione in pariatur perspiciatis nesciunt vero facilis dolores. Perferendis vero officia odio necessitatibus doloremque expedita, totam adipisci facere nobis? Itaque eum cupiditate ut esse, similique nihil magnam totam dicta iste error repellendus quis veritatis libero in reprehenderit harum, incidunt doloremque? Nostrum laboriosam consectetur culpa provident voluptas exercitationem soluta obcaecati a laborum saepe illo, incidunt et eius molestias praesentium aspernatur perspiciatis maxime ea quod sapiente corrupti porro eos. Labore ipsum, fuga distinctio aliquam aspernatur quia quam voluptas libero aperiam explicabo possimus ex sed illum optio enim eius cupiditate eos veritatis, facere adipisci dicta magnam. Reprehenderit dolorem dolor incidunt veritatis asperiores. Tempore dolore iusto assumenda. Eius, distinctio quae beatae expedita velit, autem, reiciendis quam voluptas aut impedit atque a totam molestias harum placeat exercitationem ipsum! Maiores dolores quia a cupiditate earum accusantium cum, sapiente ipsum laborum molestias voluptatum perferendis aliquid, quam suscipit porro vero ex quas repellat. Iste exercitationem aut in odit consequuntur, optio amet necessitatibus eum est suscipit repellendus vel nesciunt similique architecto totam earum! At, culpa. Sapiente amet vero earum? Exercitationem, ipsa nihil asperiores dolorem aperiam expedita eveniet sint nobis animi voluptate ipsam delectus soluta praesentium quasi atque laboriosam, id a unde dicta eligendi nemo officiis officia accusamus facere! Iste architecto tempore est cum quam quae consequuntur eum odio perspiciatis iure culpa corporis, veniam consectetur optio voluptate, sint cupiditate non beatae et quod excepturi itaque. Esse veritatis ipsa saepe tempora nisi quibusdam magnam facere ipsum nam aspernatur adipisci molestiae assumenda molestias est libero vitae quae soluta, eum blanditiis. Amet ipsa debitis reprehenderit consequuntur eligendi porro cum doloremque. Veritatis labore sunt aspernatur aut quam laborum ut beatae at cum sapiente pariatur, fugiat corrupti magni error nisi autem dolorum obcaecati, illo perspiciatis laudantium ratione eius qui! Voluptas, ea. Officiis nobis natus culpa commodi, sunt incidunt asperiores, consectetur consequatur blanditiis laborum alias quae esse libero atque aliquam eligendi. A maxime ipsam deleniti cumque fugiat ab itaque quis. Deserunt possimus maxime, quis, quasi eum excepturi officiis dignissimos qui aliquid aperiam dicta facere velit pariatur nulla dolores. Sint cupiditate eius laboriosam. Cum accusamus dolorem quos error. Obcaecati accusantium quod similique quidem, ad, id harum nemo explicabo voluptatem dolores nisi quia consequuntur fugit possimus praesentium velit fuga libero eius repellendus vel asperiores, repellat reprehenderit? Ipsam officia vel nesciunt quibusdam, explicabo numquam dicta quo vero facilis, voluptatum accusantium qui porro alias ratione voluptates, eaque odio doloribus aspernatur optio autem corrupti modi. Eum officiis omnis neque quaerat, placeat repudiandae beatae minima porro blanditiis vitae maxime, saepe quasi quas cum nesciunt necessitatibus corporis obcaecati, dolorum magnam natus ducimus quae quia. Illum eos nostrum impedit, a excepturi iure totam sit ducimus id hic rem deleniti repellat laudantium iste maxime alias accusamus consequuntur reiciendis in. Reiciendis nobis ad inventore adipisci nihil, accusantium nulla repellendus recusandae sunt dolore aliquid error asperiores veniam ducimus tempora sequi, voluptatibus beatae minima eaque veritatis distinctio natus dignissimos aperiam! Laboriosam fuga reprehenderit nostrum libero repudiandae earum quas ducimus assumenda, totam vel in vero exercitationem veritatis magni sunt ullam molestias temporibus inventore, quia dicta molestiae eaque, iure accusamus. Nam cupiditate quisquam amet cumque iure doloremque ad possimus explicabo ipsum! Omnis possimus, officia doloremque eligendi quod molestias ipsam repellat vero nihil eum necessitatibus nemo distinctio consectetur aliquam voluptatum voluptates blanditiis minus? Facilis molestias accusantium nobis repudiandae architecto, quae totam corrupti molestiae nostrum nihil placeat nemo sequi commodi impedit esse consequatur sunt dolor quaerat necessitatibus? Cum consequatur ipsum veritatis temporibus amet pariatur rem quaerat iste commodi laboriosam rerum, quas, aspernatur sed facere dolores? Quos tenetur minima reiciendis repudiandae quaerat, expedita necessitatibus fugit distinctio reprehenderit minus dolores est quisquam, inventore ipsa, nam iure soluta ratione eius ab vitae. Perspiciatis, voluptatibus reprehenderit. Explicabo cumque atque nesciunt dolor nisi quos est distinctio! Blanditiis impedit aliquid pariatur eligendi aut magnam hic doloremque sint nam? Aperiam repellat, earum officia fuga itaque accusantium nulla officiis! Tempore quia deserunt placeat maiores neque quisquam voluptatum? Odit voluptatem doloremque ea consectetur dolores quam commodi ducimus. Quas architecto in eaque quibusdam aut sit a animi! Voluptates aliquid harum omnis aperiam, consequatur vel enim, libero quisquam blanditiis minima provident, facilis unde. Accusantium incidunt eaque expedita quidem corporis odio voluptatum neque nesciunt dignissimos libero aliquid, voluptatem, consectetur, aspernatur blanditiis veniam? Veniam tempore mollitia quia culpa cupiditate minima pariatur, error optio a dolorem sequi voluptate cumque vitae fuga necessitatibus nulla quisquam, eum inventore quibusdam maxime sit distinctio? Suscipit voluptate quisquam provident animi, commodi corrupti quo pariatur quae soluta reprehenderit hic, quibusdam obcaecati laudantium ducimus, ipsam id illo dicta vitae cupiditate asperiores amet aut voluptates aspernatur? Qui, cum est. Cupiditate unde excepturi sequi nobis voluptatum, impedit facere facilis autem, saepe praesentium id animi expedita, doloremque inventore in? Aspernatur assumenda molestiae vitae saepe, quasi tenetur voluptas placeat enim omnis facere doloribus eum quisquam, commodi in perferendis impedit. Quam illo hic tempora excepturi. Obcaecati, quisquam et itaque possimus culpa ducimus mollitia, saepe expedita, quidem dolor officiis. Nisi, a. Quod corporis debitis alias consequatur dicta eos, blanditiis natus iure possimus facere veritatis aut commodi quasi at ducimus sed cupiditate aliquam. Iste consectetur, minima in asperiores delectus, pariatur nesciunt quae esse dolore provident odit voluptates neque perferendis similique architecto voluptate omnis eligendi animi libero. Illum voluptatem temporibus sunt ea animi fuga, exercitationem quod, commodi repellat aliquam, eaque quidem alias dignissimos placeat aperiam dolorum harum aspernatur nostrum culpa reiciendis deserunt distinctio velit? Corporis voluptatem ut, consectetur, corrupti tempora iste cupiditate magni sunt minima harum facere illum hic deserunt consequatur. Similique, ut accusantium? Earum, est maxime. Voluptate voluptatum incidunt, error quas quae sunt iste necessitatibus perferendis provident perspiciatis, laudantium explicabo ipsum, suscipit voluptas quis. Velit exercitationem quibusdam voluptates esse. Saepe eaque quis voluptatum fugiat nam excepturi reiciendis perferendis blanditiis recusandae aut laudantium molestiae ut dolore nisi quaerat aliquam doloremque culpa, quod accusamus voluptates pariatur atque iure dolores. Mollitia quibusdam quaerat blanditiis reiciendis in cupiditate eos amet quasi, nisi perspiciatis praesentium quis nihil velit sapiente illo doloremque minus laboriosam repudiandae? Fugit officiis tempora quisquam voluptatem corrupti, dolore quos, provident adipisci enim, minus obcaecati modi perferendis. Quisquam at delectus est beatae iure porro sit odio nemo eos quaerat ea, fuga voluptatem tempore reprehenderit qui officiis, id debitis maxime neque error quibusdam a? Dolore ab veniam amet earum corporis, maxime doloribus optio nemo iure laborum tempora dignissimos commodi porro, molestias sint pariatur quasi odit dolor eum hic? Quisquam itaque nesciunt ea beatae quis exercitationem molestias maiores, consequatur iste explicabo perspiciatis iusto. Maxime vitae saepe esse quo inventore aliquid quis architecto soluta, dolorum mollitia harum quos nemo dignissimos eos, et dicta maiores numquam error excepturi eius. Non quisquam ea neque fuga voluptatibus sunt natus iure architecto corporis debitis alias et magni dignissimos illum cupiditate dolor dicta facere molestias at, temporibus numquam provident excepturi animi? Impedit ipsum enim, similique, laudantium dolorum ab et eligendi, minus id debitis autem dignissimos quaerat vero totam earum. Molestias perspiciatis dolore praesentium! Atque, harum minima. Nostrum quasi voluptate, dignissimos vel velit rem nisi ullam qui error laboriosam maiores quod sequi exercitationem tenetur autem laborum. Voluptas veritatis corporis quasi quia accusantium consequuntur impedit sunt excepturi atque ut error, totam voluptatum obcaecati adipisci asperiores facilis necessitatibus earum fugiat labore maiores. Quos sed vero, cupiditate quis cumque dicta voluptatibus quibusdam illum minus tempore recusandae veniam rem ad harum laborum doloribus necessitatibus sunt id cum accusantium eligendi, sapiente fugiat deleniti possimus! Et ratione, obcaecati natus molestias asperiores vero non, nostrum ea rerum voluptatibus, magnam maxime? Dolorem officia architecto nesciunt totam vitae itaque perferendis autem laborum eos quia aliquid dignissimos, fuga neque qui earum? Molestiae praesentium labore corrupti? Pariatur ad incidunt nulla quas odit sequi rem quibusdam a, sed est neque iste reiciendis doloremque beatae ipsam veritatis velit adipisci quisquam qui. Possimus nisi vitae, sunt a consequuntur enim accusantium expedita repellendus veniam aspernatur voluptate perferendis magnam ipsam mollitia cum! Vero maiores voluptas ullam voluptate nostrum quam dolores, dicta, error tenetur delectus eligendi reiciendis nihil pariatur illo consequatur, eaque neque eum itaque? Ratione minus praesentium nostrum, mollitia deleniti aspernatur libero recusandae possimus dolores iste doloribus facilis fugiat minima cumque illum culpa ipsum quam unde architecto error nulla. Quam, dolore quisquam. A laboriosam exercitationem sunt. Accusamus maiores possimus ipsum, porro provident voluptatibus hic ipsa, rerum ea nostrum voluptate vel ullam ab nobis non, repellendus distinctio ut minus temporibus fugiat voluptates doloremque ipsam. Natus quos quasi, nobis repellat sint cumque minus, autem at qui asperiores maiores aperiam nemo rerum exercitationem sit dolores, provident ducimus odio sapiente vero. Facere consequatur alias hic sint similique tenetur sed magni, repellendus commodi. Praesentium libero suscipit, est asperiores dignissimos eos accusantium reiciendis saepe unde laborum blanditiis minima a dolore consectetur. Nobis quos error consequatur perferendis dolorum. Fuga eius quaerat maiores distinctio neque, sunt reprehenderit ea minus corrupti quis fugiat libero quisquam aliquam nisi doloremque saepe sapiente soluta nobis. Eos culpa a doloribus.</p>
+        </section>
+    </main>
 
-    <script>
-      // Burger menus
-      document.addEventListener('DOMContentLoaded', function () {
-        // open
-        const burger = document.querySelectorAll('.navbar-burger')
-        const menu = document.querySelectorAll('.navbar-menu')
 
-        if (burger.length && menu.length) {
-          for (var i = 0; i < burger.length; i++) {
-            burger[i].addEventListener('click', function () {
-              for (var j = 0; j < menu.length; j++) {
-                menu[j].classList.toggle('hidden')
-              }
-            })
-          }
-        }
 
-        // close
-        const close = document.querySelectorAll('.navbar-close')
-        const backdrop = document.querySelectorAll('.navbar-backdrop')
 
-        if (close.length) {
-          for (var i = 0; i < close.length; i++) {
-            close[i].addEventListener('click', function () {
-              for (var j = 0; j < menu.length; j++) {
-                menu[j].classList.toggle('hidden')
-              }
-            })
-          }
-        }
 
-        if (backdrop.length) {
-          for (var i = 0; i < backdrop.length; i++) {
-            backdrop[i].addEventListener('click', function () {
-              for (var j = 0; j < menu.length; j++) {
-                menu[j].classList.toggle('hidden')
-              }
-            })
-          }
-        }
-      })
-    </script>
-  </body>
+
+
+
+   
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+<script src='https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js'></script>
+
+<script  src="./script.js"></script>
+<script  src="./scripts.js"></script>
+</body>
 </html>
