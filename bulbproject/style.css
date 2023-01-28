@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#parentDiv{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: #0B2632;
+}
+#parentDiv>#bulbImg{
+    width:50%;
+    height: 50%;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 10px;
+}
+
+.bulbs{
+    padding:2rem;
+    border-radius: 50%;
+    border: 3px solid #0B2632;
+    background-color: #116c0e;
+    color: #f0f8ff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin:2rem 3rem;
+    cursor: pointer;
+}
+#btnBulbCenter{
+    padding:2rem 4rem;
+    border-radius:3rem;
+}
+.copy{
+    color: #bfadae;
+}
