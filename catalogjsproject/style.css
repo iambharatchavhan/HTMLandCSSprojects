@@ -15,7 +15,8 @@
     position: absolute;
     top:38rem;
     left:35rem;
-    color: #03ae03;
+    background-color: #000000;
+
 }
 #parent{
     width: 100vw;
@@ -68,14 +69,14 @@
         position: absolute;
         left: 0;
         font-size:1.5rem;
-      color: #f1fd00;
+    
       
     
     }
     #prise{
         position: absolute;
         left: 0;
-        color: #f1fd00;
+
     }
     #parent{
         width: 100vw;
