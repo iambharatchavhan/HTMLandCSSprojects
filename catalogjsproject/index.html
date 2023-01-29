@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>DOM-project01</title>
-</head>
-<body>
-    
-   <div class="parent" id="parent">
-    <img id="mainImg" src="./imges/img-one.jpg" alt="model-img">
-  
-   <div id="childs">
-    <button id="btn-one" class="btn-img"><img src="./imges/img-one.jpg" alt=""></button>
-    <button id="btn-two" class="btn-img"><img src="./imges/img-two.jpg" alt=""></button>
-    <button id="btn-three" class="btn-img"><img src="./imges/img-three.jpg" alt=""></button>
-    <button id="btn-four" class="btn-img"><img src="./imges/img-four.jpg" alt=""></button>
-   </div>
-</div>
-<h1 class="heading prise" id="prise">PRISE : 999Rs</h1>
-<h3 class="heading">GREAT REPUBLIC DAY SALE !</h3>
+  </head>
+  <body>
+    <div id="mainParent">
+    <div class="parent" id="parent">
+      <img id="mainImg" src="./imges/img-five.jpg" alt="model-img" />
 
+      <div id="childs">
+        <button id="btn-one" class="btn-img">
+          <img src="./imges/img-one.jpg" alt="" />
+        </button>
+        <button id="btn-two" class="btn-img">
+          <img src="./imges/img-two.jpg" alt="" />
+        </button>
+        <button id="btn-three" class="btn-img">
+          <img src="./imges/img-three.jpg" alt="" />
+        </button>
+        <button id="btn-four" class="btn-img">
+          <img src="./imges/img-four.jpg" alt="" />
+        </button>
+      </div>
+      <div id="details">
+        <h2 class="nameOfProduct">The Fashion T Shirts</h2>
+        <p class="tokenPrise">$129.00</p>
+        <p>Select size</p>
+        <div class="size">
+            <p><a href="#">S</a></p>
+            <p><a href="#">M</a></p>
+            <p><a href="#">L</a></p>
+            <p><a href="#">XL</a></p>
+        </div>
+        <button class="cart">Add To Cart</button>
+        <button class="cart">Buy Now</button>
+        <h2 class="proDetails">Product Details</h2>
+        <p id="proText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro amet qui laudantium nulla! Eaque ipsa vitae, eveniet officia exercitationem voluptatem nihil ullam quam doloremque quod vero assumenda provident tempore reprehenderit laborum iusto quos aperiam magni officiis voluptate, id atque veniam?</p>
+        <div class="ratings">
+            <img src="./imges/Star 1.svg" alt="">
+         <img src="./imges/Star 1.svg" alt="">
+         <img src="./imges/Star 1.svg" alt="">
+         <img src="./imges/Star 1.svg" alt="">
+         <img src="./imges/Star 1.svg" alt="">
+
+        </div>
+      </div>
+    </div>
+</div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

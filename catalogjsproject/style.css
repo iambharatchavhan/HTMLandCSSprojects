@@ -1,8 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #f0ffff;
 }
+/*
 .heading{
     position:absolute;
     top: 4rem;
@@ -24,21 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(
-        25deg,
-        hsl(110deg 98% 56%) 0%,
-        hsl(107deg 100% 69%) 8%,
-        hsl(105deg 100% 77%) 15%,
-        hsl(103deg 100% 85%) 22%,
-        hsl(101deg 100% 92%) 30%,
-        hsl(0deg 0% 100%) 38%,
-        hsl(31deg 100% 91%) 47%,
-        hsl(30deg 100% 82%) 56%,
-        hsl(30deg 100% 73%) 67%,
-        hsl(32deg 94% 63%) 79%,
-        hsl(36deg 99% 47%) 100%
-      );
-
+  
 }
 #parent img{
      width:20rem;
@@ -101,4 +94,100 @@
     height: 7rem;
 }
 
-  }
+  } */
+#mainParent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-image: url("./imges/bg.jpg");
+
+}
+#parent {
+  width: 70vw;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-items: center;
+  border: 2px solid red;
+  padding:2rem 0;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#parent>img {
+  width: 20rem;
+  height:30rem;
+  margin-left:4rem;
+}
+#parent img:hover{
+    transform: scale(1.1);
+    transition: transform 330ms ease-in-out;
+}
+#childs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#childs img {
+  width: 6em;
+  height: 7rem;
+}
+.btn-img{
+   border: none;
+   margin:0.1rem 0.2rem;
+}
+#details{
+
+    width:40vw;
+    height:65vh;
+    margin-left:4rem;
+    }
+.tokenPrise{
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin:1rem 0;
+}
+.size{
+
+    display: flex;
+    margin: 1rem 0;
+    margin-left:-1rem;
+}
+.size a{
+    text-decoration: none;
+    margin-left: 1rem;
+    background-color: #c5c5c5;
+    padding: 0.7rem 0.9rem;
+
+}
+.cart{
+    padding:1rem 2rem;
+    font-size:1.1rem;
+    border: none;
+    background-color:#1B1B1B;
+    margin: 1rem 0;
+}
+
+
+#proText{
+    line-height: 2rem;
+}
+.ratings img{
+    width:1.2rem;
+    margin-top:0.5rem;
+}
+
+@media (max-width: 600px) {
+  
+
+
+}
