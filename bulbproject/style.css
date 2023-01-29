@@ -28,7 +28,7 @@
     color: #f0f8ff;
     font-size: 1rem;
     font-weight: 700;
-    margin:2rem 3rem;
+    margin:0.8rem 3rem;
     cursor: pointer;
 }
 #btnBulbCenter{
@@ -37,4 +37,26 @@
 }
 .copy{
     color: #bfadae;
+}
+
+
+@media (max-width: 600px) {
+   #parentDiv>#bulbImg{
+    width: 90%;
+   }
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bulbs{
+    padding:1rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#btnBulbCenter{
+    padding:1rem 2rem;
+    border-radius:3rem;
+}
+
 }
