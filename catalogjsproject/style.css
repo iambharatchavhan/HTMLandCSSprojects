@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    position:absolute;
+    top: 4rem;
+    left: 33rem;
+    font-size:2rem;
+    color: #fff;
+
+}
+#prise{
+    position: absolute;
+    top:38rem;
+    left:35rem;
+    color: #03ae03;
+}
+#parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        25deg,
+        hsl(110deg 98% 56%) 0%,
+        hsl(107deg 100% 69%) 8%,
+        hsl(105deg 100% 77%) 15%,
+        hsl(103deg 100% 85%) 22%,
+        hsl(101deg 100% 92%) 30%,
+        hsl(0deg 0% 100%) 38%,
+        hsl(31deg 100% 91%) 47%,
+        hsl(30deg 100% 82%) 56%,
+        hsl(30deg 100% 73%) 67%,
+        hsl(32deg 94% 63%) 79%,
+        hsl(36deg 99% 47%) 100%
+      );
+
+}
+#parent img{
+     width:20rem;
+     height:30rem;
+}
+#childs{
+    display: flex;
+    flex-direction:column;
+}
+
+#btn-one img{
+    width: 5rem;
+    height: 7rem;
+}#btn-two img{
+    width: 5rem;
+    height: 7rem;
+}#btn-three img{
+    width: 5rem;
+    height: 7rem;
+}
+#btn-four img{
+    width: 5rem;
+    height: 7rem;
+}
+
+@media (max-width: 600px) {
+    .heading{
+        position: absolute;
+        left: 0;
+        font-size:1.5rem;
+      color: #000000;
+      
+    
+    }
+    #prise{
+        position: absolute;
+        left: 0;
+        color: #000000;
+    }
+    #parent{
+        width: 100vw;
+        height: 100vh;
+    }
+    #parent img{
+        width:18rem;
+        height:30rem;
+   }
+   #btn-one img{
+    width: 5rem;
+    height: 7rem;
+}#btn-two img{
+    width: 5rem;
+    height: 7rem;
+}#btn-three img{
+    width: 5rem;
+    height: 7rem;
+}
+#btn-four img{
+    width: 5rem;
+    height: 7rem;
+}
+
+  }
