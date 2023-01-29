@@ -68,14 +68,14 @@
         position: absolute;
         left: 0;
         font-size:1.5rem;
-      color: #000000;
+      color: #f1fd00;
       
     
     }
     #prise{
         position: absolute;
         left: 0;
-        color: #000000;
+        color: #f1fd00;
     }
     #parent{
         width: 100vw;
