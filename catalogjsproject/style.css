@@ -171,8 +171,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-top: 0.2rem;
 }
 p{
-  color: #ffffff;
+  color: #070707;
 }
+
 .size a{
   color: #ffffff;
   background-color: #1B1B1B;
@@ -188,8 +189,10 @@ p{
 .tokenPrise{
   margin: 0;
   font-size:30px;
-  color: #f0f8ff;
+  color: #0a0a0a;
 }
-
+.cart {
+  padding: 0.8rem 1.5rem;
+}
 
 }
