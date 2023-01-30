@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@300;500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Itim', cursive;
+  /* font-family: 'Roboto', sans-serif; */
+}
+body {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+  font-size: 20px;
+}
+.heading {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #03203c;
+}
+.info {
+  font-size: 1.2rem;
+  color: #03203c;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 1.5rem;
+}
+.StikcyNotes {
+  padding: 1rem;
+  border-radius: 1rem;
+  resize: none;
+  width: 16rem;
+  height: 9rem;
+  color: #03203c;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  -webkit-box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.30);
+  box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.30);
+}
+.StikcyNotes::placeholder{
+    color: #f7f9fa;
+    opacity: 60%;
+}
+
+.StikcyNotes:hover,.StikcyNotes:focus {
+    -webkit-backdrop-filter: blur(2.9px);
+    -webkit-box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.75);
+    transition: all 300ms ease;
+
+}
+#btn{
+ 
+    border-radius: 1rem;
+    resize: none;
+    width: 16rem;
+    height: 9rem;
+    color: #03203c;
+    border: none;
+    font-size: 2rem;
+    outline: none;
+    border-color:rgba(255, 255,255,0.37);
+    background-color:rgba(255, 255,255,0.27);
+    color: rgba(0,0, 0,0.3);
+    cursor: pointer;
+}
+#btn:hover{
+    background-color:rgba(255, 255,255,0.55);
+    color: rgba(0,0, 0,0.6);
+    transition: all 300ms ease;
+
+}
