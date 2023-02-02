@@ -35,6 +35,8 @@ tThree.addEventListener('click', () => {
     mainBody.classList.remove("four");
     mainBody.classList.remove("five");
     mainBody.classList.remove("six");
+    createBtn.style.color = "#000"
+
 })
 
 tFour.addEventListener('click', () => {
