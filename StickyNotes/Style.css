@@ -9,7 +9,7 @@
 body {
   background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
   font-size: 20px;
-  height: 100vh;
+  height: 100%;
 }
 .theme{
   font-size: 18px;
