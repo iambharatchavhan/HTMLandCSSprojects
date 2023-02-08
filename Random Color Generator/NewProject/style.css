@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=IBM+Plex+Mono:wght@400;500;700&family=Satisfy&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font-family: 'Babylonica', cursive;
+font-family: 'IBM Plex Mono', monospace; */
+#main{
+    background-color: aqua;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+}
+#quote{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 3px #eb0707, 0 0 5px #ffff00;
+    text-align: center;
+}
+#center{
+    padding:3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#btnColor{
+   
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    color: #ffffff;
+    /* border-radius: 2rem; */
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem 3rem;
+ 
+    
+}
