@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+  }
+  
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6m;
+    font-size: 62.5%;
+  }
+  body{
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .header{
+    background-color: #F0F1F3;
+    color:#183153;
+    width:100vw;
+    text-align:center;
+    font-size: 2rem;
+    height:5rem;
+  }
+ .header h1 span{
+    color:#00C9A7 ;
+ }
+ .main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 86vh;
+ }
+#parent{
+    /* border: 2px solid red; */
+    width:50vw;
+    margin-top: 2rem;
+    min-height:60vh;
+}
+#input,li {
+    width:100%;
+    padding:1.4rem;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} 
+#input{
+    position: relative;
+    padding-right: 10rem;
+    border:1px solid #183153;
+    border-radius:0.5rem;
+    color: #183153;
+    font-weight: 600;
+}
+
+#btnAdd{
+    padding: 1.6rem 3rem;
+    margin-left: 2.5rem;
+    background-color: #183153;
+    color: #F0F1F3;
+    border-radius:0.5rem;
+    position: absolute;
+    right:38.5rem;
+    cursor: pointer;
+
+}
+.items{
+    position: relative;
+}
+.items li{
+     width: 100%;
+     background-color: #183153;
+     margin: 1rem 0;
+    list-style-type: none;
+    font-weight: 600;
+    color: #F0F1F3;
+    position: relative;
+    border-radius:0.5rem;
+    text-align: justify;
+    padding-right: 8rem;
+    position: relative;
+}
+.items i{
+  font-size: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.items .fa-circle-check{
+    right: 5rem;
+    color:#02de02;
+}
+.items .fa-circle-xmark{
+   color: red;
+}
+.items i:hover{
+    -webkit-transform:  rotate(-10deg) scale(1.5);
+    -webkit-transform-origin:bottom right;
+}
+.done{
+    background-color: #545e6c !important; 
+    text-decoration: line-through;
+  
+}
+
+
+
+  .footer{
+    font-size: 1.5rem;
+    background-color: #183153;
+    width: 100vw;
+    height: 5rem;
+    color: #F0F1F3;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+  .copy{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+  }
+.follow{
+    display: flex;
+    justify-content: space-around;
+}
+.follow i{
+    margin:0 0.5rem;
+}
+@media screen and (max-width: 1440px){
+    #btnAdd{
+        right: 36rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    #btnAdd{
+        right: 25.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  
+    #parent{
+        /* border: 2px solid red; */
+        width:100%;
+    }
+    #btnAdd{
+        right: 0rem;
+    }
+
+    .footer{
+        font-size: 1.6rem;
+    }
+    
+}
+
