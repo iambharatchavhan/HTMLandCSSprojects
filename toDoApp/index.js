@@ -2,6 +2,7 @@ const parent = document.querySelector("#toDocontainer");
 const inputEl = document.querySelector("#input");
 const btnAdd = document.querySelector("#btnAdd");
 
+const theData = [];
 
 
 
@@ -10,15 +11,19 @@ const addElTo = (item) =>{
     const theDiv = document.createElement("div");
     theDiv.classList.add("items")
     const createParent = parent.appendChild(theDiv);
+
     const theLi = document.createElement("li")
     createParent.appendChild( theLi )
 
     theLi.innerHTML = ` ${item}
-    <i class="fa-solid fa-circle-check "></i>
-    <i class="fa-solid fa-circle-xmark"></i>`
+    <i class="fa-solid mark fa-circle-check "></i>
+    <i class="fa-solid del fa-circle-xmark"></i>`
     
-    const mark = document.querySelector(".fa-circle-check");
-    const deleteEl = document.querySelector(".fa-circle-xmark");
+    const mark = document.querySelector(".mark");
+    
+    const deleteEl = document.querySelector(".del");
+
+
     mark.addEventListener('click', function(){
             
             theLi.classList.toggle("done");
@@ -33,15 +38,18 @@ const addElTo = (item) =>{
 
 
 
+
+
 btnAdd.addEventListener('click', function(){
     
-    theText = inputEl.value
+    theText = inputEl.value;
     if(theText != ""){
     addElTo(theText);
-    console.log("clicked")
-    console.log(inputEl.value);
+    // console.log("clicked")
+    // console.log(inputEl.value);
     inputEl.value = "";
-}
+}  
+
         
 })
 
