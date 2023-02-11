@@ -1,8 +1,99 @@
-const parent = document.querySelector('#toDocontainer')
+
 const inputEl = document.querySelector('#input')
 const btnAdd = document.querySelector('#btnAdd')
 const theDiv = document.querySelector('.items')
+let dataValue;
+// Storing data in the local storage
+btnAdd.addEventListener('click', () => {
+  const InputText = inputEl.value
+  const text = localStorage.getItem('data'); // initially it is null
+  if (text) {
+    dataValue = JSON.parse(text); // [] // ['ATUL']
 
+  } else {
+    dataValue = [];
+  }
+  console.log(dataValue)
+  dataValue.push(InputText)
+  localStorage.setItem('data', JSON.stringify(dataValue))
+  inputEl.value = "";
+  showTodoList()
+})
+
+// Show todo list on DOM
+
+function showTodoList() {
+  const text = localStorage.getItem('data');
+  if (text) {
+    dataValue = JSON.parse(text);
+
+  } else {
+    dataValue = [];
+  }
+  let html = "";
+  dataValue.forEach(elem => {
+    html += `<div> 
+    <li>${elem}  <i class="fa-solid fa-circle-check mark"></i>
+    <i class="fa-solid fa-circle-xmark delete"></i></li> 
+    </div>`
+  });
+
+  theDiv.innerHTML = html;
+  const crossBtn = Array.from(document.getElementsByClassName('delete'));
+  crossBtn.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+      dataValue.splice(index, 1);
+      localStorage.setItem('data', JSON.stringify(dataValue))
+      showTodoList();
+    })
+  })
+ 
+  const checkBtn = Array.from(document.getElementsByClassName('mark'));
+  checkBtn.forEach((elem, index) => {
+    elem.addEventListener('click', () => {
+    elem.parentElement.classList.toggle('done')
+    })
+  })
+
+}
+
+
+
+
+showTodoList()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 const theData = []
 
 const addElTo = (item) => {
@@ -74,8 +165,8 @@ btnAdd.addEventListener('click', function () {
             console.log(storeData);
             localStorage.setItem("data", JSON.stringify(storeData))
         })
-    })
-    
+    })
+    
 }
 
  */
