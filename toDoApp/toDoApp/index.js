@@ -4,8 +4,19 @@ const btnAdd = document.querySelector('#btnAdd')
 const theDiv = document.querySelector('.items')
 let dataValue;
 // Storing data in the local storage
+
+// function Empty (){
+//   if 
+// }
+
+
+
+
+
 btnAdd.addEventListener('click', () => {
+
   const InputText = inputEl.value
+  if (InputText){
   const text = localStorage.getItem('data'); // initially it is null
   if (text) {
     dataValue = JSON.parse(text); // [] // ['ATUL']
@@ -17,8 +28,14 @@ btnAdd.addEventListener('click', () => {
   dataValue.push(InputText)
   localStorage.setItem('data', JSON.stringify(dataValue))
   inputEl.value = "";
-  showTodoList()
+  
+}
+else{
+  Swal.fire("What’s cookin’, good lookin’?", "Please Add any Task!");
+}
+showTodoList()
 })
+
 
 // Show todo list on DOM
 
@@ -39,6 +56,7 @@ function showTodoList() {
   });
 
   theDiv.innerHTML = html;
+
   const crossBtn = Array.from(document.getElementsByClassName('delete'));
   crossBtn.forEach((elem, index) => {
     elem.addEventListener('click', () => {

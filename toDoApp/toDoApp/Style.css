@@ -17,11 +17,10 @@
     scroll-padding-top: 6m;
     font-size: 62.5%;
   }
-  body{
-    margin: 0 auto;
-    width:100vw;
-    max-width: 1440px;
+  html,body{
+ 
     font-family: 'Roboto Mono', monospace;
+    min-height: 100vh;
   }
 
   .header{
@@ -39,13 +38,21 @@
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    min-height: 86vh;
+    min-height: 100%;
+    /* border: 1px solid red; */
+    padding-bottom:1rem;
+    overflow: auto;
+
+
  }
 #parent{
     /* border: 2px solid red; */
     width:50%;
     margin-top: 2rem;
-    min-height:60vh;
+    /* border: 1px solid red; */
+    min-height: 80vh;
+
+   
 }
 #input,li {
     width:100%;
@@ -55,7 +62,7 @@
 } 
 #input{
     position: relative;
-    padding-right: 10rem;
+    padding-right: 1rem;
     border:1px solid #183153;
     border-radius:0.5rem;
     color: #183153;
@@ -117,15 +124,17 @@
 
 
   .footer{
+
     font-size: 1.5rem;
     background-color: #183153;
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     color: #F0F1F3;
     display: flex;
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: -1rem;
 
   }
   .copy{
@@ -137,8 +146,9 @@
     display: flex;
     justify-content: space-around;
 }
-.follow i{
+.follow a i{
     margin:0 0.5rem;
+    color: #fff;
 }
 @media screen and (max-width: 1440px){
     #btnAdd{
