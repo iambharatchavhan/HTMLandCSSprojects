@@ -49,10 +49,10 @@ function showTodoList() {
   }
   let html = "";
   dataValue.forEach(elem => {
-    html += `<div> 
+    html += `
     <li>${elem}  <i class="fa-solid fa-circle-check mark"></i>
     <i class="fa-solid fa-circle-xmark delete"></i></li> 
-    </div>`
+    `
   });
 
   theDiv.innerHTML = html;
