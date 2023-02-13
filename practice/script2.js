@@ -10,7 +10,7 @@ btn.addEventListener('click', () => {
         const inputData = input.value;
       const  lsDataGet = localStorage.getItem("theNewKey");
         if( lsDataGet){
-            lsData = JSON.parse( lsDataGet)
+            lsData = JSON.parse(lsDataGet)
         }
         else{
             lsData = [];
@@ -20,3 +20,7 @@ btn.addEventListener('click', () => {
         input.value = " "
  
 })
+
+function getDataFrom() {
+    
+}
