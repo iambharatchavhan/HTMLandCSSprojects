@@ -63,8 +63,7 @@ lsData.forEach(element => {
 });
  //? have apply  innerhtml  parent and override dummy 
    parentEl.innerHTML = html; 
-
-   
+ 
 
  }
 
