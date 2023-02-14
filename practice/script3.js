@@ -13,3 +13,4 @@ const theDate = new Date()
 let fullDate =`The date : ${theDate.getDate()}/${(theDate.getMonth() + 1)}/${theDate.getFullYear()}  TheTime: ${theDate.getHours()}:${theDate.getMinutes()}:${theDate.getSeconds()}  `
 console.log(fullDate);
 theH1.innerHTML = fullDate;
+
