@@ -45,10 +45,12 @@ background-position: center;
     flex-direction: column;
     justify-content: center;
     margin-left: 6rem;
-    background-color: #394A61;
+    background-color: #F7D367;
+
     border-radius: 1rem 1rem 0 0;
     color:#fff;
     font-size: 1.5rem;
+    padding: 1rem;
 }
 
 #bottom{
@@ -58,16 +60,18 @@ background-position: center;
     display: flex;
     justify-content:space-around;
     align-items: center;
-    background-color: #F7D367;
+    background-color: #394A61;
+    color: #F7D367;
+
 }
 #category {
     font-size: 2rem;
-    color: #394A61;
+    color: #F7D367;
 }
 #btn{
     padding: 1rem 2rem;
-    background-color: #394A61;
-    color: #F7D367;
+    background-color: #F7D367;
+    color: #394A61;
     font-size: 1.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -78,7 +82,7 @@ background-position: center;
     transition: transform 330ms ease-in-out;
 }
 #punch {
-    color: #F7D367;
+    color: #394A61;
 }
 @media screen and (max-width: 768px) {
   
