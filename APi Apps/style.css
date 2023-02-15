@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+
+  }
+  
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6m;
+    font-size: 62.5%;
+  }
+  body{
+ background-image: url('./minions-laughing-rofl.gif');
+background-position: center;
+    font-family: 'Roboto Mono', monospace;
+    min-height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #main{
+    /* border: 1px solid blue; */
+    max-width:40vw;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+  }
+#card {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6rem;
+    background-color: #394A61;
+    border-radius: 1rem 1rem 0 0;
+    color:#fff;
+    font-size: 1.5rem;
+}
+
+#bottom{
+    width: 80%;
+    height: 20%;
+    margin-left: 6rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #F7D367;
+}
+#category {
+    font-size: 2rem;
+    color: #394A61;
+}
+#btn{
+    padding: 1rem 2rem;
+    background-color: #394A61;
+    color: #F7D367;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+#btn:hover{
+    transform: scaleX(1.1);
+    transition: transform 330ms ease-in-out;
+}
+#punch {
+    color: #F7D367;
+}
+@media screen and (max-width: 768px) {
+  
+    #main{
+        /* border: 1px solid blue; */
+        width: 100vw;
+        /* border: 1px solid red; */
+        margin-left: -23rem;
+        font-size: 1rem;
+    
+      }
+      #card {
+        width: 100vw;
+        margin: 0;
+        font-size: 1rem;
+      }
+      #bottom{
+        width: 100vw;
+        margin: 0rem;
+      }
+    #btn{
+        padding:0.9rem 1rem;
+        font-size:1.4rem;  
+    }
+    #category{
+        font-size:1.5rem;
+    }
+}
