@@ -1,41 +1,54 @@
-*{
- margin: 0;
- padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background: -webkit-linear-gradient(60deg, #ff6464 50%, #5ac8fa 50%);
-    background: -o-linear-gradient(60deg, #ff6464 50%, #5ac8fa 50%);
-    background: -moz-linear-gradient(60deg, #ff6464 50%, #5ac8fa 50%);
-    background: linear-gradient(60deg, #ff6464 50%, #5ac8fa 50%);
-}
-
-#divCenter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    border: 1px solid red;
-    height:100vh;
-    
-}
-img{
-    border: 5px solid #fff;
-    border-radius:5px;
-    width: 40rem;
-    height: 30rem;
+body {
+  background: -webkit-linear-gradient(60deg, #ff6464 50%, #5ac8fa 50%);
+  background: -o-linear-gradient(60deg, #ff6464 50%, #5ac8fa 50%);
+  background: -moz-linear-gradient(60deg, #ff6464 50%, #5ac8fa 50%);
+  background: linear-gradient(60deg, #ff6464 50%, #5ac8fa 50%);
 }
 
-#btnLoad{
-  padding:1rem 7rem;
-  font-size:3rem;
+#divCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid red;
+  height: 100vh;
+}
+img {
   border: 5px solid #fff;
-  border-radius:5px;
+  border-radius: 5px;
+  width: 40rem;
+  height: 30rem;
+}
+
+#btnLoad {
+  padding: 1rem 7rem;
+  font-size: 3rem;
+  border: 5px solid #fff;
+  border-radius: 5px;
 
   color: aliceblue;
-  background: -webkit-linear-gradient(60deg,#5ac8fa  50%, #ff6464 50%);
-  background: -o-linear-gradient(60deg,#5ac8fa   50%, #ff6464 50%);
+  background: -webkit-linear-gradient(60deg, #5ac8fa 50%, #ff6464 50%);
+  background: -o-linear-gradient(60deg, #5ac8fa 50%, #ff6464 50%);
   background: -moz-linear-gradient(60deg, #5ac8fa 50%, #ff6464 50%);
-  background: linear-gradient(60deg,  #5ac8fa 50%, #ff6464 50%);
+  background: linear-gradient(60deg, #5ac8fa 50%, #ff6464 50%);
 }
 
+@media screen and (max-width: 840px){
+    img {
+        /* border: 5px solid #fff; */
+        /* border-radius: 5px; */
+        width: 20rem;
+        height: 20rem;
+      }
+      #btnLoad{
+        font-size: 2rem;
+        padding:0.3rem 1rem;
+      }
+      
+
+}
